@@ -8,3 +8,5 @@ function countSheeps(arrayOfSheep) {
   }
   return count;
 }
+
+// 2nd solution:
