@@ -4,7 +4,7 @@ function digitize(n) {
   return numString
     .split("")
     .reverse()
-    .map((num) => {
+    .map(num => {
       return +num;
     });
 }

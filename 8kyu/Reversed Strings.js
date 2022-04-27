@@ -1,6 +1,6 @@
 // Solution:
 
-const solution = (str) => str.split("").reverse().join("");
+const solution = str => str.split("").reverse().join("");
 
 // old Solution:
 function solution(str) {

@@ -1,4 +1,4 @@
-const stringToNumber = (s) => parseInt(s);
+const stringToNumber = s => parseInt(s);
 
 // const stringToNumber = function (str) {
 //   return parseInt(str);
