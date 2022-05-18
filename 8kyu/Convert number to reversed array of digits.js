@@ -11,9 +11,9 @@ function digitize(n) {
 
 // Solution 2: in one line
 
-function digitize(n) {
-  return String(n).split("").map(Number).reverse();
-}
+// function digitize(n) {
+//   return String(n).split("").map(Number).reverse();
+// }
 
 // Pseudo code
 
