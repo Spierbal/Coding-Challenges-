@@ -1,3 +1,9 @@
+// Shortest solution:
+// function positiveSum(arr) {
+//   return arr.filter(el => el > 0).reduce((a, b) => a + b, 0)
+// }
+
+// Solution 1
 function positiveSum(arr) {
   let sum = 0;
 
@@ -8,11 +14,8 @@ function positiveSum(arr) {
   });
   return sum;
 }
-// 2nd solution
-// function positiveSum(arr) {
-//   return arr.filter(el => el > 0).reduce((a, b) => a + b, 0)
-// }
-// 3rd solution
+
+// Solution 3
 // function positiveSum(arr) {
 
 //   let sum = 0;

@@ -1,9 +1,7 @@
-//solutions:
+// Shortest solution
+const opposite = n => -n;
 
-function opposite(number) {
-  return number * -1;
-}
+// Solution 2
+//const opposite = n => n * -1;
 
-// function opposite(number) {
-//   return -number;
-// }
+//console.log(opposite(5)) // -5
