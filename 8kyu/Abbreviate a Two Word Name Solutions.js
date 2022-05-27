@@ -4,4 +4,4 @@ const abbrevName = name =>
     .map(x => x[0].toUpperCase())
     .join(".");
 
-console.log(abbrevName("Sam harris"));
+// console.log(abbrevName("Ben Gorden")); // B.G
