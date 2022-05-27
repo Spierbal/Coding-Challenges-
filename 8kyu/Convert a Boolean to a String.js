@@ -1,6 +1,6 @@
 //*** arrow function:
 
-const booleanToString = (b) => b.toString();
+const booleanToString = b => b.toString();
 
 //***Using ternary operator:
 
@@ -20,3 +20,5 @@ const booleanToString = (b) => b.toString();
 
 // Input = true or false
 // Output= "true" or "false"
+
+//console.log(booleanToString(true)) // --> "true"
