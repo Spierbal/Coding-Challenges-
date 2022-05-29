@@ -13,3 +13,6 @@ const boolToWord = bool => (bool ? "Yes" : "No");
 //     return "No";
 //   }
 // }
+
+//console.log(boolToWord(true)) --> "Yes"
+//console.log(boolToWord(false)) --> "No"
