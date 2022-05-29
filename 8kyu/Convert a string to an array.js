@@ -6,4 +6,4 @@ const stringToNumber = str => parseInt(str);
 
 //const stringToNumber = (str) => Number(str);
 
-// console.log(stringToNumber("5"))
+// console.log(stringToNumber("5")) --> 5
