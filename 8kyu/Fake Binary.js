@@ -1,5 +1,6 @@
-const fakeBin = x =>
-  x
+function fakeBin(x) {
+  return x
     .split("")
-    .map(n => (Number(n) >= 5 ? "1" : "0"))
+    .map(n => (n < 5 ? "0" : "1"))
     .join("");
+}
