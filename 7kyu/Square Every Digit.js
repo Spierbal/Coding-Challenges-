@@ -7,6 +7,9 @@ function squareDigits(num) {
   );
 }
 
+// console.log(squareDigits(3212)) // => 9414
+// console.log(squareDigits(2112)) // => 4114
+
 // function squareDigits(num){
 //     return +String(num).split("").map(x => x**2).join("")
 //   }
