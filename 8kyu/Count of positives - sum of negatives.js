@@ -17,3 +17,5 @@ function countPositivesSumNegatives(input) {
         input.filter(n => n < 0).reduce((a, b) => a + b),
       ];
 } */
+
+// console.log(countPositivesSumNegatives([1, 2, 3, -11, -12, -13])) // --> [3, -36]

@@ -1,16 +1,17 @@
-function digitize(n) {
-  const numString = String(n);
+// Shorter Solution:
 
-  return numString
-    .split("")
-    .reverse()
-    .map(num => {
-      return +num;
-    });
-}
+const digitize = n => String(n).split("").map(Number).reverse();
 
-// Solution 2: in one line
-
+// Longer Solution:
 // function digitize(n) {
-//   return String(n).split("").map(Number).reverse();
+//   const numString = String(n);
+
+//   return numString
+//     .split("")
+//     .reverse()
+//     .map(num => {
+//       return +num;
+//     });
 // }
+
+// console.log(digitize(35231)); // --> [1,3,2,5,3]

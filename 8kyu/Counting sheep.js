@@ -14,3 +14,5 @@ function countSheeps(arrayOfSheep) {
 //   }
 //   return count;
 // }
+
+// console.log(countSheeps([true, true, true, false, false, false, true, true])); // --> 5
