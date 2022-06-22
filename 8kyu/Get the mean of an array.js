@@ -1,7 +1,7 @@
 // Most optimized solution:
 
-// const getAverage = marks =>
-//   Math.floor(marks.reduce((a, b) => a + b, 0) / marks.length);
+const getAverage = marks =>
+  Math.floor(marks.reduce((a, b) => a + b, 0) / marks.length);
 
 // Solution 2:
 
