@@ -14,6 +14,8 @@ function calculateAge(birthYear, currentYear) {
   }
 }
 
+//console.log(calculateAge(1971, 2022)) --> You are 51 years old
+
 //** solution 2: *//
 
 // function calculateAge(birthYear, currentYear) {
