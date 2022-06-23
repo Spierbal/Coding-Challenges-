@@ -1,8 +1,8 @@
-//*** arrow function:
+// Solution 1:
 
 const booleanToString = b => b.toString();
 
-//***Using ternary operator:
+// Solution 2:
 
 // const booleanToString = (b) => (b ? "true" : "false");
 
