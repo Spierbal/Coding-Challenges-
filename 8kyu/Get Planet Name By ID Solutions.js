@@ -23,22 +23,4 @@ function getPlanetName(id) {
   }
 }
 
-// Description:
-// The function is not returning the correct values. Can you figure out why?
-
-// Example (Input --> Output ):
-
-// 3 --> "Earth"
-
-// Test Cases:
-
-// describe("Tests", () => {
-//     it("test", () => {
-//   Test.assertEquals(getPlanetName(2), 'Venus');
-//   Test.assertEquals(getPlanetName(5), 'Jupiter');
-//   Test.assertEquals(getPlanetName(3), 'Earth');
-//   Test.assertEquals(getPlanetName(4), 'Mars');
-//   Test.assertEquals(getPlanetName(8), 'Neptune');
-//   Test.assertEquals(getPlanetName(1), 'Mercury');
-//     });
-//   });
+// console.log(getPlanetName(3)) // --> "Earth"
