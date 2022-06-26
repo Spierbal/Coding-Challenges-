@@ -1,5 +1,5 @@
 //Solution:
-//const monkeyCount = n => [...Array(n)].map((_, x) => x + 1);
+const monkeyCount = n => [...Array(n)].map((_, x) => x + 1);
 
 // Solution 2:
 // const monkeyCount = n =>
