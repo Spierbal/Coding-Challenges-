@@ -6,19 +6,7 @@ const booleanToString = b => b.toString();
 
 // const booleanToString = (b) => (b ? "true" : "false");
 
-//*** clever solution:
+//Solution 3:
 //const booleanToString = b => b + "";
-
-//*** Old past solution:
-// function booleanToString(b){
-//     if (b){
-//       return "true"
-//     }else{
-//       return "false"
-//     }
-//   }
-
-// Input = true or false
-// Output= "true" or "false"
 
 //console.log(booleanToString(true)) // --> "true"
