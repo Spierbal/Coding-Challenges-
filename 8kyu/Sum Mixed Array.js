@@ -1,9 +1,9 @@
 const sumMix = x => x.reduce((a, b) => +b + a, 0);
 
-//Solution2:
+//Solution 2:
 //const sumMix = x => x.map(Number).reduce((a, b) => a + b);
 
-//Solution2:
+//Solution 3:
 // function sumMix(x) {
 //     let sum = 0;
 //     x.forEach(num => {
