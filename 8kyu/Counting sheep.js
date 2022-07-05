@@ -2,10 +2,7 @@ const countSheeps = arrayOfSheep =>
   arrayOfSheep.filter(element => element === true).length;
 
 // Solution 2:
-
-// function countSheeps(arrayOfSheep) {
-//   return arrayOfSheep.filter(Boolean).length;
-// }
+//const countSheeps = arrayOfSheep => arrayOfSheep.filter(Boolean).length;
 
 // 2nd solution: less optimized
 // function countSheeps(arrayOfSheep) {

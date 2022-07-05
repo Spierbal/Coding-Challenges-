@@ -1,7 +1,7 @@
-const countBy = (x, n) => Array.from({ length: n }, (_, i) => x + i * x);
+const countBy = (x, n) => [...Array(n)].map((_, i) => (i + 1) * x);
 
 //Solution 2:
-// const countBy = (x, n) => [...Array(n)].map((_, index) => (index + 1) * x);
+//const countBy = (x, n) => Array.from({ length: n }, (_, i) => x + i * x);
 
 //Longer Solution 3:
 // function countBy(x, n) {
