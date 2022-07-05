@@ -15,4 +15,4 @@ const monkeyCount = n => [...Array(n)].map((_, x) => x + 1);
 //     return arr;
 //   }
 
-//console.log(monkeyCount(5)) --> [1, 2, 3, 4, 5]
+//console.log(monkeyCount(5)) //--> [1, 2, 3, 4, 5]

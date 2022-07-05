@@ -1,16 +1,18 @@
-//  1st solution: Using array filter() method
-function countSheeps(arrayOfSheep) {
-  return arrayOfSheep.filter(element => element === true).length;
-}
+const countSheeps = arrayOfSheep =>
+  arrayOfSheep.filter(element => element === true).length;
+
+// Solution 2:
+
+// function countSheeps(arrayOfSheep) {
+//   return arrayOfSheep.filter(Boolean).length;
+// }
 
 // 2nd solution: less optimized
 // function countSheeps(arrayOfSheep) {
 //   let count = 0;
 
 //   for (i = 0; i < arrayOfSheep.length; i++) {
-//     if (arrayOfSheep[i]) {
-//       count++;
-//     }
+//     if (arrayOfSheep[i]) count++;
 //   }
 //   return count;
 // }
