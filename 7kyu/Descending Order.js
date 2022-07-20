@@ -1,7 +1,7 @@
 const descendingOrder = n => Number([...String(n)].sort().reverse().join(""));
 
 //Solution 2:
-const descendingOrder = n => +Array.from(String(n)).sort().reverse().join("");
+//const descendingOrder = n => +Array.from(String(n)).sort().reverse().join("");
 
 //Solution 3
 // const descendingOrder = n =>
