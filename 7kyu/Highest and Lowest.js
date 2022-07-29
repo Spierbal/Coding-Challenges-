@@ -4,7 +4,7 @@ function highAndLow(numbers) {
 }
 
 //Solution 2:
-const highAndLow = numbers =>
-  `${Math.max(...numbers.split(" "))} ${Math.min(...numbers.split(" "))}`;
+// const highAndLow = numbers =>
+//   `${Math.max(...numbers.split(" "))} ${Math.min(...numbers.split(" "))}`;
 
-console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4")); // --> 42 -9
+// console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4")); // --> 42 -9
