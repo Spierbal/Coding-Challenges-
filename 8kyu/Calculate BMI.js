@@ -8,10 +8,7 @@ function bmi(weight, height) {
   return "Obese";
 }
 
-//console.log(bmi(80, 1.8)); // "Normal"
-
-// Solution 2: Nested Ternary Operator
-
+// Solution 2:
 // function bmi(weight, height) {
 //   const bmi = weight / height ** 2;
 
@@ -23,3 +20,5 @@ function bmi(weight, height) {
 //     ? "Overweight"
 //     : "Obese";
 // }
+
+//console.log(bmi(80, 1.8)); // --> "Normal"
