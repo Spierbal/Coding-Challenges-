@@ -10,3 +10,5 @@ const cockroachSpeed = s => Math.floor((s * 100000) / 3600);
 //   const speed = Math.floor((s * cmInKM) / secsInHour);
 //   return speed;
 // }
+
+//console.log(cockroachSpeed(1.08)) // --> 30
