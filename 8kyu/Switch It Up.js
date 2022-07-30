@@ -23,4 +23,4 @@ function switchItUp(number) {
   }
 }
 
-console.log(switchItUp(2)); // --> Two
+// console.log(switchItUp(2)); // --> Two
