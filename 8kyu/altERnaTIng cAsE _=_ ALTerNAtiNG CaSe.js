@@ -4,6 +4,13 @@ String.prototype.toAlternatingCase = function () {
   );
 };
 
+// Solution 2:
+// String.prototype.toAlternatingCase = function () {
+//   return [...this]
+//     .map(c => (c === c.toUpperCase() ? c.toLowerCase() : c.toUpperCase()))
+//     .join("");
+// };
+
 //  console.log("hello world".toAlternatingCase()) // --> HELLO WORLD
 //  console.log("HELLO WORLD".toAlternatingCase()) // --> hello world
 //  console.log("hello WORLD".toAlternatingCase()) // --> HELLO world
