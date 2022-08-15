@@ -1,4 +1,4 @@
-const powersOfTwo = n => [...Array(n + 1)].map((_, x) => 2 ** x);
+const powersOfTwo = n => [...Array(n + 1)].map((_, i) => 2 ** i);
 
 //Solution 2:
 //const powersOfTwo = n => Array.from({ length: n + 1 }, (_, i) => 2 ** i);
