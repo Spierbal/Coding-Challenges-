@@ -16,3 +16,6 @@ function humanYearsCatYearsDogYears(humanYears) {
   }
   return [humanYears, catYears, dogYears];
 }
+
+// console.log(humanYearsCatYearsDogYears(1)) // --> [1, 15, 15]
+// console.log(humanYearsCatYearsDogYears(2)) // --> [2, 24, 24]
