@@ -16,3 +16,6 @@ const expressionMatter = (a, b, c) =
 
 //   return Math.max(values1, values2, values3, values4);
 // }
+
+
+//console.log(expressionMatter(2, 10, 3)) // --> 60
