@@ -22,6 +22,6 @@ const areYouPlayingBanjo = name =>
 //     ? `${name} plays banjo`
 //     : `${name} does not play banjo`;
 
-// console.log(areYouPlayingBanjo("Adam"));
-// console.log(areYouPlayingBanjo("Ringo"));
-// console.log(areYouPlayingBanjo("rolf"));
+// console.log(areYouPlayingBanjo("Adam")); // --> "Adam does not play banjo'"
+// console.log(areYouPlayingBanjo("Ringo")); // --> "Ringo plays banjo"
+// console.log(areYouPlayingBanjo("rolf")); // --> "rolf plays banjo"
