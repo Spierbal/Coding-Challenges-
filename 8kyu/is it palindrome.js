@@ -11,4 +11,4 @@ const isPalindrome = x =>
 
 // console.log(isPalindrome("Aba")); // --> true
 // console.log(isPalindrome("aba")); // --> true
-// console.log(isPalindrome("hello")); // --> true
+// console.log(isPalindrome("hello")); // --> false
