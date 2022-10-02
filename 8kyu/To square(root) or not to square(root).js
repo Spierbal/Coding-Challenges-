@@ -1,11 +1,13 @@
 const squareOrSquareRoot = arr =>
   arr.map(num => (Math.sqrt(x) % 1 === 0 ? Math.sqrt(num) : num * num));
 
-const squareOrSquareRoot = arr => {
-  return arr.map(num => {
-    return Math.sqrt(x) % 1 === 0 ? Math.sqrt(num) : num * num;
-  });
-};
+//Solution 1: with return statements
+// const squareOrSquareRoot = arr => {
+//   return arr.map(num => {
+//     return Math.sqrt(x) % 1 === 0 ? Math.sqrt(num) : num * num;
+//   });
+// };
+
 // Solution 2:
 // const squareOrSquareRoot = arr => {
 //   return arr.map(x => {
