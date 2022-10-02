@@ -1,9 +1,4 @@
-const stringToNumber = str => parseInt(str);
+const stringToArray = str => str.split(" ");
 
-//Solution 2:
-//const stringToNumber = (str) => Number(str);
-
-// Solution 3:
-// const stringToNumber = str => str -""
-
-// console.log(stringToNumber("5")) --> 5
+// console.log(stringToArray("Robin Singh")); //--> ["Robin", "Singh"]
+// console.log(stringToArray("I love arrays the best")); // ==>["I", "love", "arrays", "the", "best"]
