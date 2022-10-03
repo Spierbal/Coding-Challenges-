@@ -7,7 +7,7 @@ function createArray(number) {
 }
 
 // Solution 2:
-const createArray = num => [...Array(num)].map((_, i) => i + i);
+const createArray = num => [...Array(num)].map((_, i) => i + 1);
 
 // console.log(counter(4)) --> // --> [1, 2, 3, 4]
 // console.log(counter(7)) --> // --> [1, 2, 3, 4, 5, 6, 7]
