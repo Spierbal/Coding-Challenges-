@@ -1,11 +1,16 @@
-// 626 ms (23ms)
 const strCount = (str, letter) =>
-  str.split("").reduce((a, b) => a + letter.includes(b), 0);
+  str.split("").reduce((sum, char) => sum + letter.includes(char), 0);
 
-console.log(strCount("Hello", "l")); // 2 (there are two occurences of "l")
-
-// 649 ms // (25ms)
+//Solution 1b:
 // const strCount = (str, letter) =>
 //   [...str].reduce((a, b) => a + letter.includes(b), 0);
 
-// 932 ms // (47ms)
+//Solution 2a:
+// const strCount = (str, letter) =>
+//   str.split('').filter(c => c === letter).length;
+
+//Solution 2b:
+// const strCount = (str, letter) =>
+//   str.split("").filter(char => letter.includes(char)).length;
+
+// console.log(strCount("Hello", "l")); //--> 2 (there are two occurences of "l")
