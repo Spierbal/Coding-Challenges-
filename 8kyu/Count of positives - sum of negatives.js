@@ -6,20 +6,20 @@ const countPositivesSumNegatives = input => {
 };
 
 //Solution 1b: without ternary operator
-// const countPositivesSumNegatives = input => {
-//   if (!input || input.length === 0) return [];
+/* const countPositivesSumNegatives = input => {
+  if (!input || input.length === 0) return [];
 
-//   let count = 0;
-//   let sum = 0;
+  let count = 0;
+  let sum = 0;
 
-//   input.forEach(num => {
-//     if (num > 0) count++;
-//     if (num < 0) sum += num;
-//   });
-//   return [count, sum];
-// }
+  input.forEach(num => {
+    if (num > 0) count++;
+    if (num < 0) sum += num;
+  });
+  return [count, sum];
+} */
 
-//Solution3 :
+//Solution 2 :
 // const countPositivesSumNegatives = input => {
 //   if (!input || input.length === 0) return [];
 //   let sum = 0,
