@@ -1,11 +1,10 @@
-//Solution:
-const monkeyCount = n => [...Array(n)].map((_, x) => x + 1);
+const monkeyCount = n => [...Array(n)].map((_, i) => i + 1);
 
-// Solution 2:
-// const monkeyCount = n =>
-//   Array(n)
-//     .fill()
-//     .map((_, i) => i + 1);
+// Solution 2a:
+// const monkeyCount = n => Array.from(Array(n)).map((_, i) => i + 1);
+
+//Solution 2b:
+// const monkeyCount = n => Array.from({length : n}).map((_, i) => i + 1);
 
 // Solution 3: Less Optimized
 // function monkeyCount(n) {
