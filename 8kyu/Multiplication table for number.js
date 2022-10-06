@@ -1,4 +1,4 @@
-const multiTable = n =>
+const multiTable = number =>
   Array.from(
     Array(10),
     (_, i) => `${i + 1} * ${number} = ${(i + 1) * number}`
