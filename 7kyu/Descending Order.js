@@ -16,4 +16,5 @@ const descendingOrder = n => Number([...String(n)].sort().reverse().join(""));
 //       .join("")
 //   );
 // }
-console.log(descendingOrder(1021)); // 2110
+
+// console.log(descendingOrder(1021)); // 2110
