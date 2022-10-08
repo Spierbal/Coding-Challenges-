@@ -9,8 +9,9 @@ const monkeyCount = n => [...Array(n)].map((_, i) => i + 1);
 // Solution 3: Less Optimized
 /* function monkeyCount(n) {
     let arr = [];
-    for(let i = 1; i <= n; i++) arr.push(i);
-
+    for(let i = 1; i <= n; i++) {
+      arr.push(i);
+    }
     return arr;
   } */
 
