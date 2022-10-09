@@ -8,13 +8,13 @@ function solution(number) {
 }
 
 // Solution 2:
-/* function solution(n) {
+function solution(n) {
   return n < 1
     ? 0
     : Array.from(Array(n))
         .map((_, i) => i)
         .reduce((x, y) => x + (y % 3 === 0 || y % 5 === 0 ? y : 0));
-} */
+}
 
 // Solution 3:
 /* function solution(n) {
