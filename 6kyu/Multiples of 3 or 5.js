@@ -35,3 +35,6 @@ function solution(number) {
         .reduce((a, b) => a + b);
 }
  */
+
+// console.log(solution(10)); // --> 23 (3+5+6+9 = 23)
+// console.log(solution(20)); // --> 78 (3+5+6+9+10+12+15+18=78)
