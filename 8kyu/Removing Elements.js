@@ -4,13 +4,13 @@ const removeEveryOther = arr => arr.filter((_, index) => index % 2 === 0);
 //const removeEveryOther = arr => arr.filter((_, i) => (i + 2) % 2 === 0);
 
 // Solution 2:
-function removeEveryOther(arr) {
+/* function removeEveryOther(arr) {
   let result = [];
   for (let i = 0; i < arr.length; i++) {
     if (i % 2 === 0) result.push(arr[i]);
   }
   return result;
-}
+} */
 
 // console.log(removeEveryOther(["Hello", "Goodbye", "Hello Again"])); // --> [ 'Hello', 'Hello Again' ]
 
