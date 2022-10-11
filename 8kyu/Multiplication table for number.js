@@ -14,8 +14,7 @@ const multiTable = n =>
     result += `${i} * ${num} = ${i * num}\n`;
   }
   return result.slice(0, -1);
-}
- */
+} */
 
 // console.log(multiTable(5)); // -->
 /* output:
