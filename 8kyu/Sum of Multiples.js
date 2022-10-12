@@ -1,4 +1,3 @@
-// Solution 2: 5 steps
 const sumMul = (n, m) =>
   (n * (Math.floor(m / n) * (Math.floor(m / n) + 1))) / 2 || "INVALID";
 
