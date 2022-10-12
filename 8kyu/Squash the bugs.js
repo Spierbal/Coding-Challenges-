@@ -1,13 +1,16 @@
 const findLongest = str => Math.max(...str.split(" ").map(word => word.length));
 
 // Solution 2:
-/* 
-function findLongest(str) {
-  const word = str.split(" ");
+/* const findLongest = str =>
+  str.split(" ").reduce((max, word) => Math.max(max, word.length), 0);
+ */
+// Solution 3:
+/* function findLongest(str) {
+  const arr = str.split(" ");
   let longest = 0;
-  for (let i = 0; i < word.length; i++) {
-    if (word[i].length > longest) {
-      longest = word[i].length;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].length > longest) {
+      longest = arr[i].length;
     }
   }
   return longest;
