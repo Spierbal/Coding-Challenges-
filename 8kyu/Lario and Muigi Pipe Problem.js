@@ -9,6 +9,7 @@ const pipeFix = nums =>
 // const pipeFix = n =>
 //   Array.from({ length: n.slice(-1) - n[0] + 1 }, (_, i) => n[0] + i);
 
+// Solution 2:
 /* function pipeFix(nums) {
   let arr = [];
   for (let i = nums[0]; i <= nums[nums.length - 1]; i++) {
