@@ -8,9 +8,9 @@ function duplicateCount(text) {
 }
 
 // Solution 2:
-const duplicateCount = text =>
+/* const duplicateCount = text =>
   [...new Set([...text.toLowerCase()].filter((e, i) => text.indexOf(e) !== i))]
-    .length;
+    .length; */
 
 // Solution 3:
 /* function duplicateCount(text) {
