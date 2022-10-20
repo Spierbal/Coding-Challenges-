@@ -1,4 +1,3 @@
-// Shortest solution
 const opposite = n => -n;
 
 // Solution 2
