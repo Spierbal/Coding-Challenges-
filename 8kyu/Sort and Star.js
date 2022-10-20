@@ -8,4 +8,4 @@ const twoSort = s => [...s.sort()[0]].join("***");
 //   return s.sort()[0].split("").join("***");
 // }
 
-// console.log(twoSort(["Hello", "World"])); // --> H***e***l***l***o
+// console.log(twoSort(["Hello", "World"])); // --> "H***e***l***l***o"
