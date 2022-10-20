@@ -31,7 +31,7 @@ function peopleWithAgeDrink(age) {
     : "drink whisky";
  */
 
-// console.log(peopleWithAgeDrink(18)) //drink beer
-// console.log(peopleWithAgeDrink(8)) //drink toddy
-// console.log(peopleWithAgeDrink(15)) // drink coke
-// console.log(peopleWithAgeDrink(21)) //// drink whisky
+// console.log(peopleWithAgeDrink(18)) //"drink beer"
+// console.log(peopleWithAgeDrink(8)) //"drink toddy"
+// console.log(peopleWithAgeDrink(15)) // "drink coke"
+// console.log(peopleWithAgeDrink(21)) // "drink whisky"
