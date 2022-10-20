@@ -15,4 +15,4 @@ const countSheep = n =>
 } */
 
 // console.log(countSheep(2)) // --> "1 sheep...2 sheep..."
-// console.log(countSheep(5)); // --> "1 sheep...2 sheep...3 sheep...4 sheep...5 sheep..."
+// console.log(countSheep(5)); // --> "1 sheep...2 sheep...3 sheep..."

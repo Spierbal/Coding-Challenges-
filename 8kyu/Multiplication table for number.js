@@ -18,7 +18,7 @@ const multiTable = n =>
 
 // console.log(multiTable(5)); // -->
 /* output:
-1 * 5 = 5
+"1 * 5 = 5
 2 * 5 = 10
 3 * 5 = 15
 4 * 5 = 20
@@ -27,4 +27,6 @@ const multiTable = n =>
 7 * 5 = 35
 8 * 5 = 40
 9 * 5 = 45
-10 * 5 = 50  */
+10 * 5 = 50"  */
+
+// 5times table
