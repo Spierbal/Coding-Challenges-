@@ -10,4 +10,4 @@ const abbrevName = name =>
 //   return `${initial[0][0]}.${initial[1][0]}`;
 // }
 
-// console.log(abbrevName("Ben Gorden")); // B.G
+// console.log(abbrevName("Ben Gorden")); // "B.G"
