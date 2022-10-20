@@ -5,6 +5,6 @@ function pigIt(str) {
     .join(" ");
 }
 //Solution 2:
-const pigIt = str => str.replace(/(\w)(\w*)/g, "$2$1ay");
+// const pigIt = str => str.replace(/(\w)(\w*)/g, "$2$1ay");
 
 // console.log(pigIt("Pig latin is cool")); // --> "igPay atinlay siay oolcay"
