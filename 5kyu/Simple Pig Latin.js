@@ -7,4 +7,4 @@ function pigIt(str) {
 //Solution 2:
 const pigIt = str => str.replace(/(\w)(\w*)/g, "$2$1ay");
 
-// console.log(pigIt("Pig latin is cool")); // --> igPay atinlay siay oolcay
+// console.log(pigIt("Pig latin is cool")); // --> "igPay atinlay siay oolcay"
