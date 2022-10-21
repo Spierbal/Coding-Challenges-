@@ -8,6 +8,6 @@ const getRealFloor = n => (n <= 0 ? n : n >= 13 ? n - 2 : n - 1);
 }
  */
 
-// console.log(getRealFloor(0)); // 0
 // console.log(getRealFloor(15)); // 13
+// console.log(getRealFloor(10)); // 9
 // console.log(getRealFloor(-3)); // -3
