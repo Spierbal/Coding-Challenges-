@@ -10,5 +10,6 @@ function getMiddle(s) {
 
 //   return s.length % 2 === 0 ? s[middle - 1] + s[middle] : s[middle];
 // }
+
 // console.log(getMiddle("test")); // --> es
 // console.log(getMiddle("testing")); // --> t
