@@ -1,5 +1,5 @@
 const squareOrSquareRoot = arr =>
-  arr.map(num => (Math.sqrt(x) % 1 === 0 ? Math.sqrt(num) : num * num));
+  arr.map(num => (Math.sqrt(num) % 1 === 0 ? Math.sqrt(num) : num * num));
 
 //Solution 1: with return statements
 // const squareOrSquareRoot = arr => {
