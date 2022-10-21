@@ -11,5 +11,5 @@ function getMiddle(s) {
   return s.length % 2 ? s.charAt(middle) : s.slice(middle - 1, middle + 1);
 } */
 
-// console.log(getMiddle("test")); // --> es
-// console.log(getMiddle("testing")); // --> t
+// console.log(getMiddle("test")); // --> "es"
+// console.log(getMiddle("testing")); // --> "t"
