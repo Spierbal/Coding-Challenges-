@@ -8,4 +8,4 @@ function rentalCarCost(d) {
 //Solution2 :
 //const rentalCarCost = d => d * 40 - (d >= 7 ? 50 : (d >= 30 ? 20 : 0))
 
-console.log(rentalCarCost(8)); // -270
+// console.log(rentalCarCost(8)); // 270
