@@ -1,4 +1,4 @@
-digitize = n => [...String(n)].map(Number).reverse();
+const digitize = n => [...String(n)].map(Number).reverse();
 
 // Solution 2:
 //const digitize = n => Array.from(String(n), Number).reverse()
