@@ -23,3 +23,9 @@ function digitalRoot(n) {
 // const digitalRoot = n => ((n - 1) % 9) + 1;
 
 // console.log(digitalRoot(456)); //6 --> 4 + 5 + 6 = 15 --> 1 + 5 = 6
+
+//[...Array(0,0,0,0]
+//[0,0,0,0
+
+let arr = Array.from(Array(5), (_, i) => 2 + i);
+console.log(arr); // [2, 3, 4, 5, 6]
