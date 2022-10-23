@@ -15,4 +15,4 @@ Array.prototype.reverse = function () {
 };
  */
 
-console.log([1, 2, 3, 4].reverse()); // [4,3,2,1]);
+// console.log([1, 2, 3, 4].reverse()); // [4,3,2,1]);
