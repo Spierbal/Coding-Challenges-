@@ -7,6 +7,7 @@ function alternateCase(s) {
 function alternateUpperCase(s) {
   return [...s].map((c, i) => (i % 2 !== 0 ? c.toUpperCase() : c)).join("");
 }
+
 // Solution 2
 /* function capitalize(s) {
   return [...s].reduce(
@@ -37,11 +38,11 @@ function alternateUpperCase(s) {
 } */
 
 // solution 4: clever
-function capitalize(s) {
+/* function capitalize(s) {
   return [0, 1].map(b =>
     [...s].map((c, i) => (i % 2 === b ? c.toUpperCase() : c)).join("")
   );
-}
+} */
 
 // console.log(capitalize("abcdef")); // --> ['AbCdEf', 'aBcDeF'])
-// console.log(capitalize("codewars")) //-->['CoDeWaRs', 'cOdEwArS']);
+// console.log(capitalize("codewars")) //--> ['CoDeWaRs', 'cOdEwArS']);
