@@ -1,6 +1,23 @@
-const filter_list = l => l.filter(x => typeof x === "number");
+const filter_list = l => l.filter(x => typeof x !== "string");
 
-// Solution 2:
+//const filter_list = l => l.filter(x => typeof x === "number");
+
+// Solution 1b:
 // const filter_list = l => l.filter(x => Number(x) === x)
+
+// Solution 1c
+// const filter_list = l => l.filter(Number.isInteger);
+
+// Solution 3:
+/* function filter_list(l) {
+  let res = [];
+
+  for (let item of l) {
+    if (typeof item === "number") {
+      res.push(item);
+    }
+  }
+  return res;
+} */
 
 //console.log(filter_list([1,2,'a','b'])) // --> [1, 2]

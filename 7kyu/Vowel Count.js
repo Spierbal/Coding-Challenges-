@@ -12,6 +12,7 @@ const getCount2 = str => (str.match(/[aeiou]/g) || []).length;
 /* function getCount(str) {
   let vowelsCount = 0;
   const vowels = ["a", "e", "i", "o", "u"];
+  
   for (const char of str) {
     if (vowels.includes(char)) {
       vowelsCount++;
