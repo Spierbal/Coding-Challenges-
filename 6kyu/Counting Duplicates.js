@@ -27,14 +27,14 @@ function duplicateCount(text) {
 }
  */
 
+// Solution 4:
+/* function duplicateCount(text) {
+  return [
+    ...Set([...text.toLowerCase()].filter((e, i) => text.indexOf(e) !== i)),
+  ].length;
+} */
+
 // console.log(duplicateCount("abcde")) // --> 0
 // console.log(duplicateCount("aabbbcd")) // ---> 2
 // console.log(duplicateCount("indivisibility")) // --> 1
 // console.log(duplicateCount("Indivisibility")) // --> 2
-
-function duplicateCount(text) {
-  return [
-    ...Set([...text.toLowerCase()].filter((e, i) => text.indexOf(e) !== i)),
-  ].length;
-}
-console.log(duplicateCount("aabbcde"));
