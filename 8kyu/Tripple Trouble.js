@@ -11,7 +11,7 @@ const tripleTrouble = (one, two, three) =>
 
 // Solution 3:
 /* const tripleTrouble = (one, two, three) =>
-  one.replace(/./g, (value, i) => value + two[i] + three[i]); */
+  one.replace(/\w/g, (value, i) => value + two[i] + three[i]); */
 
 // Solution 4:
 /* function tripleTrouble(one, two, three) {
