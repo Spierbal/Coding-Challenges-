@@ -1,9 +1,12 @@
-const arrayDiff = (a, b) => a.filter(x => !b.includes(x));
+const arrayDiff = (a, b) => a.filter(x => !new Set(b).has(x));
 
 // Solution 2:
-//const arrayDiff = (a, b) => a.filter(x => b.indexOf(x) === -1);
+//const arrayDiff = (a, b) => a.filter(x => !b.includes(x));
 
 // Solution 3:
+//const arrayDiff = (a, b) => a.filter(x => b.indexOf(x) === -1);
+
+// Solution 4:
 /* function arrayDiff(a, b) {
   const result = [];
   for (let i = 0; i < a.length; i++) {
