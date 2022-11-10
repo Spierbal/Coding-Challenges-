@@ -27,8 +27,8 @@ function popElement(arr) {
   return arr;
 } */
 
-console.log(getLength([1, 2, 3])); // --> 3;
-console.log(getFirst([1, 2, 3])); // --> 1;
-console.log(getLast([1, 2, 3])); // --> 3;
-console.log(pushElement([1, 2, 3])); // --> [1, 2, 3, 4]
-console.log(popElement([1, 2, 3])); // --> [1, 2]
+// console.log(getLength([1, 2, 3])); // --> 3;
+// console.log(getFirst([1, 2, 3])); // --> 1;
+// console.log(getLast([1, 2, 3])); // --> 3;
+// console.log(pushElement([1, 2, 3])); // --> [1, 2, 3, 4]
+// console.log(popElement([1, 2, 3])); // --> [1, 2]
