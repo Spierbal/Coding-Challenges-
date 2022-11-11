@@ -10,5 +10,5 @@ const getAverage = marks =>
   return Math.floor(total / marks.length);
 } */
 
-// console.log(getAverage([1, 1, 1, 1, 1, 1, 1, 2])); // --> // 1
+// console.log(getAverage([1, 1, 1, 1, 1, 1, 1, 2])); // --> 1
 // console.log(getAverage([1, 5, 10, 20, 9, 15])); // --> 10
