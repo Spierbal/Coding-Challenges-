@@ -1,9 +1,9 @@
-// function arrayMadness(a, b) {
-//   const square = a.reduce((a, b) => a + b ** 2, 0);
-//   const cube = b.reduce((a, b) => a + b ** 3, 0);
+function arrayMadness(a, b) {
+  const square = a.reduce((a, b) => a + b ** 2, 0);
+  const cube = b.reduce((a, b) => a + b ** 3, 0);
 
-//   return square > cube;
-// }
+  return square > cube;
+}
 
 // Solution 1b:
 /* const arrayMadness = (a, b) =>
