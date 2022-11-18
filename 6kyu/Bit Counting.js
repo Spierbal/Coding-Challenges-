@@ -13,4 +13,4 @@ const countBits = n => n.toString(2).split``.filter(x => x === "1").length;
 // Solution 4:
 // const countBits = n => n.toString(2).split(0).join``.length
 
-// console.log(countBits(1234)); // --> 2
+// console.log(countBits(1234)); // --> 5
