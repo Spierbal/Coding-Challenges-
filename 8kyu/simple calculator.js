@@ -73,9 +73,9 @@ function calculator(a, b, sign) {
   return typeof (a && b) === "number" ? res : "unknown value";
 }; */
 
-console.log(calculator(1, 2, "+")); // -->
-console.log(calculator(1, 2, "-")); // -->
-console.log(calculator(3, 5, "*")); // -->
-console.log(calculator(6, 2, "/")); // -->
-console.log(calculator(6, 2, "$")); // -->
-console.log(calculator(6, "h", "*")); // -->
+// console.log(calculator(1, 2, "+")); // -->
+// console.log(calculator(1, 2, "-")); // -->
+// console.log(calculator(3, 5, "*")); // -->
+// console.log(calculator(6, 2, "/")); // -->
+// console.log(calculator(6, 2, "$")); // -->
+// console.log(calculator(6, "h", "*")); // -->
