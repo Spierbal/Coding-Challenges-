@@ -1,5 +1,6 @@
 function remove(s, n) {
   let res = s;
+
   for (let i = 0; i < n; i++) {
     res = res.replace("!", "");
   }
