@@ -8,9 +8,9 @@
 // }
 
 // Solution 2: recursion
-const remove = (s, n) => (n ? remove(s.replace("!", ""), n - 1) : s);
+// const remove = (s, n) => (n ? remove(s.replace("!", ""), n - 1) : s);
 
-console.log(remove("Hi!", 1)); // "Hi"
-console.log(remove("Hi!!!", 1)); // "Hi!!"
-console.log(remove("!Hi!", 1)); //  "Hi!"
-console.log(remove("!!!Hi !!hi!!! !hi", 1)); // "!!Hi !!hi!!! !hi"
+// console.log(remove("Hi!", 1)); // "Hi"
+// console.log(remove("Hi!!!", 1)); // "Hi!!"
+// console.log(remove("!Hi!", 1)); //  "Hi!"
+// console.log(remove("!!!Hi !!hi!!! !hi", 1)); // "!!Hi !!hi!!! !hi"
