@@ -7,7 +7,7 @@ String.prototype.toJadenCase = function () {
 //   return str.replace(/(^|\s)[a-z]/g, x => x.toUpperCase());
 // }
 
-// Solution 3: The For Of Loop
+// Solution 3: For Of Loop
 /* String.prototype.toJadenCase = function () {
   let words = [];
   for (let word of this.split(" ")) {
