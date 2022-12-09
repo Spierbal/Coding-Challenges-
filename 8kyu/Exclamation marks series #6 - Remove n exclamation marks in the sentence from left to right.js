@@ -1,11 +1,21 @@
-// function remove(s, n) {
-//   let res = s;
+function remove(s, n) {
+  let res = s;
 
-//   for (let i = 0; i < n; i++) {
-//     res = res.replace("!", "");
-//   }
-//   return res;
-// }
+  for (let i = 0; i < n; i++) {
+    res = res.replace("!", "");
+  }
+  return res;
+}
+
+// Solution 1b: For Of Loop
+function remove(s, n) {
+  let res = s;
+
+  for (let item of s) {
+    res = res.replace("!", "");
+  }
+  return res;
+}
 
 // Solution 2: recursion
 // const remove = (s, n) => (n ? remove(s.replace("!", ""), n - 1) : s);
