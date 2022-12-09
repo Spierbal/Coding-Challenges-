@@ -8,7 +8,7 @@ const filter_list = l => l.filter(x => typeof x !== "string");
 // Solution 1c
 // const filter_list = l => l.filter(Number.isInteger);
 
-// Solution 3:
+// Solution 3: For Of Loop
 /* function filter_list(l) {
   let res = [];
 
