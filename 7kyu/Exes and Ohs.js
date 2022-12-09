@@ -8,7 +8,7 @@ const XO = str =>
   return x.length === o.length;
 }; */
 
-// Solution 2:
+// Solution 2: For Of Loop
 /* 
 function XO(str) {
   let equal = 0;
