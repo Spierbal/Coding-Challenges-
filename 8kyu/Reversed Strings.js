@@ -10,7 +10,7 @@ const solution = str => str.split("").reverse().join("");
 }
  */
 
-// Solution 3:
+// Solution 3: For Of Loop
 /* function solution(str) {
   let reversed = "";
 
