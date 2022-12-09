@@ -14,7 +14,6 @@ function isVow(a) {
     if ("aeiou".includes(char)) a[i] = char;
   }
   return a;
-}
- */
+} */
 
 // console.log(isVow([118, 117, 120, 121, 117, 98, 122, 97, 120, 106])); // --> [ 118, 'u', 120, 121, 'u', 98, 122, 'a', 120, 106 ]
