@@ -5,7 +5,7 @@ const countSheep = n =>
 // const countSheep = n =>
 //   Array.from(Array(n), (_, i) => `${i + 1} sheep...`).join("");
 
-// Solution 3: less optimized
+// Solution 3:
 /* function countSheep(num) {
   let str = "";
   for (let i = 1; i <= num; i++) {
