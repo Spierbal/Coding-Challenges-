@@ -27,7 +27,7 @@ function getCharCode(str) {
   return str.toUpperCase().charCodeAt(0) - 64;
 } */
 
-// Solution 2:
+// Solution 2: For Of Loop
 /* function alphabetPosition(text) {
   const result = [];
 
@@ -48,6 +48,6 @@ function getCharCode(str) {
     .join` `;
 } */
 
-console.log(alphabetPosition("The sunset sets at twelve o' clock."));
+// console.log(alphabetPosition("The sunset sets at twelve o' clock."));
 
 //"20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11"
