@@ -1,4 +1,4 @@
-function DNAStrand1(dna) {
+function DNAStrand(dna) {
   const DNACorrections = { A: "T", T: "A", G: "C", C: "G" };
 
   return [...dna].map(str => DNACorrections[str]).join("");
