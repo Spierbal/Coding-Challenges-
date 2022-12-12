@@ -1,7 +1,7 @@
 function DNAStrand(dna) {
   const DNACorrections = { A: "T", T: "A", G: "C", C: "G" };
 
-  return [...dna].map(str => DNACorrections[str]).join("");
+  return [...dna].map(char => DNACorrections[char]).join("");
 }
 
 // Solution 2:
