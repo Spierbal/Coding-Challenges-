@@ -11,6 +11,6 @@ Sleigh.prototype.authenticate = function (name, password) {
   }
 } */
 
-const sleigh = new Sleigh();
+// const sleigh = new Sleigh();
 // console.log(sleigh.authenticate("Santa Claus", "Ho Ho Ho!")); // --> true
 // console.log(sleigh.authenticate("Santa", "Ho Ho Ho!")); // --> false
