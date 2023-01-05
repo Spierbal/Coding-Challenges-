@@ -1,4 +1,4 @@
-const flattenAndSort = array => [].concat(...array).sort();
+const flattenAndSort = array => [].concat(...array).sort((a, b) => a - b);
 
 // Solution 2:
 /* const flattenAndSort = array =>
