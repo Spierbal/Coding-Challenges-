@@ -27,16 +27,16 @@ const flatten = (...arr) =>
 
 // Solution 2c
 /* function flatten(...array) {
-  let res = [];
+  let arr = [];
 
   for (let i = 0; i < array.length; i++) {
     if (Array.isArray(array[i])) {
-      res = res.concat(flatten(...array[i]));
+      arr = arr.concat(flatten(...array[i]));
     } else {
-      res.push(array[i]);
+      arr.push(array[i]);
     }
   }
-  return res;
+  return arr;
 } */
 
 /* console.log(flatten(1, [2, 3], 4, 5, [6, [7, [8]]])); // [1,2,3,4,5,6,7,8]
