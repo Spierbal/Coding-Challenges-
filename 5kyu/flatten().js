@@ -39,19 +39,5 @@ const flatten = (...arr) =>
   return arr;
 } */
 
-// Solution 2d:
-/* function flatten(...array) {
-  let arr = [];
-
-  for (let i = 0; i < array.length; i++) {
-    if (Array.isArray(array[i])) {
-      arr = arr.concat(flatten(...array[i]));
-    } else {
-      arr.push(array[i]);
-    }
-  }
-  return arr;
-} */
-
 /* console.log(flatten(1, [2, 3], 4, 5, [6, [7, [8]]])); // [1,2,3,4,5,6,7,8]
 console.log(flatten([[[[[1]]]]], ["a", [3, ["b"]]], null, 5, "c")); */ // [1,'a',3,'b',null,5,'c']
