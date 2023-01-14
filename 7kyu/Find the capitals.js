@@ -25,4 +25,4 @@ const capitals = word => word.match(/[A-Z]/g).map(el => word.indexOf(el));
   return arr;
 } */
 
-console.log(capitals("CodEWaRas")); // [0,3,4,6]
+// console.log(capitals("CodEWaRas")); // [0,3,4,6]
