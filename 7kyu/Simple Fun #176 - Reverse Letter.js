@@ -3,6 +3,7 @@ const reverseLetter = s => [...s.replace(/[^a-zA-Z]/g, "")].reverse().join("");
 //Solution 1b:
 //const reverseLetter = s => [...s.replace(/[^a-z]/gi, "")].reverse().join("");
 
+// Solution 1c:
 /* function reverseLetter(str) {
   return str.match(/[a-z]/gi).reverse().join("");
 } */
