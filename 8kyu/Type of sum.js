@@ -1,5 +1,6 @@
 const typeOfSum = (a, b) => typeof (a + b);
 
+/* 
 console.log(typeOfSum(12, 1)); // "number"
 console.log(typeOfSum("d", 1)); // "string"
 console.log(typeOfSum(1, "a")); // "string"
@@ -9,4 +10,5 @@ console.log(typeOfSum("s", null)); // "string"
 console.log(typeOfSum(null, undefined)); // "number"
 console.log(typeOfSum(undefined, "re")); // "string"
 console.log(typeOfSum(undefined, true)); // "number"
-console.log(typeOfSum(null, false)); // "number"
+console.log(typeOfSum(null, false)); // "number" 
+*/
