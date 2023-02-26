@@ -1,9 +1,9 @@
-function leo(oscar) {
-  if (oscar === 88) return "Leo finally won the oscar! Leo is happy";
-  if (oscar === 86) return "Not even for Wolf of wallstreet?!";
-  if (oscar < 88) return "When will you give Leo an Oscar?";
-  if (oscar > 88) return "Leo got one already!";
-}
+// function leo(oscar) {
+//   if (oscar === 88) return "Leo finally won the oscar! Leo is happy";
+//   if (oscar === 86) return "Not even for Wolf of wallstreet?!";
+//   if (oscar < 88) return "When will you give Leo an Oscar?";
+//   if (oscar > 88) return "Leo got one already!";
+// }
 
 // solution 1b:
 // function leo(oscar) {
@@ -13,6 +13,20 @@ function leo(oscar) {
 
 //   return "Leo got one already!";
 // }
+
+// Solution 1c:
+/* function leo(oscar) {
+  switch (true) {
+    case oscar > 88:
+      return "Leo finally won the oscar! Leo is happy";
+    case oscar === 86:
+      return "Not even for Wolf of wallstreet?!";
+    case oscar < 88:
+      return "When will you give Leo an Oscar?";
+    default:
+      return "Leo got one already!";
+  }
+} */
 
 // console.log(leo(89)); // "Leo got one already!"
 // console.log(leo(88)); // "Leo finally won the oscar! Leo is happy"
