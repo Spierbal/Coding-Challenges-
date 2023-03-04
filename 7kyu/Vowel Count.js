@@ -1,5 +1,5 @@
 // Solution 1:
-const getCount2 = str => (str.match(/[aeiou]/g) || []).length;
+const getCount = str => (str.match(/[aeiou]/g) || []).length;
 
 // Solution 2:
 // const getCount = str =>
