@@ -1,8 +1,8 @@
-/* function dontGiveMeFive(start, end) {
+function dontGiveMeFive(start, end) {
   return [...Array(end - start + 1)]
     .map((_, i) => i + start)
     .filter(e => !String(e).includes("5")).length;
-} */
+}
 
 // Solution 1b:
 /* const dontGiveMeFive = (s, e) =>
@@ -33,6 +33,5 @@
   return counter;
 } */
 
-/* console.log(dontGiveMeFive(4, 17)); // --> 12;
+console.log(dontGiveMeFive(4, 17)); // --> 12;
 console.log(dontGiveMeFive(1, 9)); // --> 8;
- */
