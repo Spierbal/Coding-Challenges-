@@ -1,5 +1,8 @@
 const billboard = (name, price = 30) => name.length / (1 / price);
 
+// Solution 2
+// const billboard = (name, price = 30) => name.repeat(price).length;
+
 // console.log(billboard("Jeong-Ho Aristotelis")); // 600
 // console.log(billboard("Idwal Augustin")); // 420
 // console.log(billboard("Hadufuns John", 20)); // 260
