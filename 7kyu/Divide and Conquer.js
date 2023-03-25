@@ -1,8 +1,12 @@
-function divCon(x, strSum = 0, intSum = 0) {
-  x.map(e => (typeof e === "string" ? (strSum += Number(e)) : (intSum += e)));
+const divCon = x =>
+  x.reduce((a, b) => (typeof b === "number" ? a + b : a - b), 0);
 
-  return intSum - strSum;
-}
+// Solution 2:
+// function divCon(x, strSum = 0, intSum = 0) {
+//   x.map(e => (typeof e === "string" ? (strSum += Number(e)) : (intSum += e)));
+
+//   return intSum - strSum;
+// }
 
 // console.log(divCon([9, 3, "7", "3"])); // 2
 // console.log(divCon(["5", "0", 9, 3, 2, 1, "9", 6, 7])); // 14
