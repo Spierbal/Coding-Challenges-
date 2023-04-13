@@ -5,30 +5,23 @@ function calculateAge(birthYear, currentYear) {
       return "You were born this very year!";
     case age === 1:
       return "You are 1 year old.";
-    case age > 0:
-      return `You are ${age} years old.`;
     case age < 0:
       return `You will be born in ${-age} years.`;
+    default:
+      return `You are ${age} years old.`;
   }
 }
 
-//** solution 2: *//
-
+// Solution 2:
 // function calculateAge(birthYear, currentYear) {
-//     const age = currentYear - birthYear;
-
-//     if (age === 1) {
-//       return "You are 1 year old.";
-//     } else if (age === -1) {
-//       return "You will be born in 1 year.";
-//     } else if (age > 0) {
-//       return `You are ${age} years old.`;
-//     } else if (age < 0) {
-//       return `You will be born in ${-age} years.`;
-//     } else {
-//       return "You were born this very year!";
-//     }
-//    }
+//   const age = currentYear - birthYear;
+//   if (age === 0) return "You were born this very year!";
+//   if (age === 1) return "You are 1 year old.";
+//   if (age === -1) return "You will be born in 1 year.";
+//   return age > 0
+//     ? `You are ${age} years old.`
+//     : `You will be born in ${-age} years.`;
+// }
 
 // console.log(calculateAge(3400, 3400)); // You were born this very year!
 // console.log(calculateAge(2021, 2022)); // You are 1 year old.
