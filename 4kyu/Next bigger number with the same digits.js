@@ -25,31 +25,38 @@ function nextBigger(n) {
   return Number(digits.join(""));
 }
 
-// Solution 1b: replace for loop with while loop
-function nextBigger(n) {
-  const digits = [...String(n)].map(Number);
+//Solution 1b: replace for loop with while loop
+/* function nextBigger(n) {
+  // Convert the number to an array of digits
+  const digits = [...n.toString()].map(Number);
 
-  let i = digits.length - 2;
-  while (i >= 0 && digits[i] >= digits[i + 1]) i--;
+  // Find the first digit from the right that is smaller than the digit to its right
+  let pivotIdx = digits.length - 2;
+  while (pivotIdx >= 0 && digits[pivotIdx] >= digits[pivotIdx + 1]) pivotIdx--;
 
-  if (i < 0) return -1;
+  // If there is no such digit, the number is already the biggest possible number
+  if (pivotIdx < 0) return -1;
 
-  let j = digits.length - 1;
-  while (digits[j] <= digits[i]) j--;
+  // Find the rightmost digit that is larger than the pivot digit
+  let swapIdx = digits.length - 1;
+  while (digits[swapIdx] <= digits[pivotIdx]) swapIdx--;
 
-  [digits[i], digits[j]] = [digits[j], digits[i]];
+  // Swap the pivot and swap digits
+  [digits[pivotIdx], digits[swapIdx]] = [digits[swapIdx], digits[pivotIdx]];
 
-  let k = i + 1;
-  let l = digits.length - 1;
-  while (k < l) {
-    [digits[k], digits[l]] = [digits[l], digits[k]];
-    k++;
-    l--;
+  // Reverse the digits to the right of the pivot
+  let left = pivotIdx + 1;
+  let right = digits.length - 1;
+  while (left < right) {
+    [digits[left], digits[right]] = [digits[right], digits[left]];
+    left++;
+    right--;
   }
+  // Convert the array of digits back to a number
   return Number(digits.join(""));
-}
+} */
 
-// console.log(nextBigger(12)); // 21
+console.log(nextBigger(12)); // 21
 // console.log(nextBigger(513)); // 531
 // console.log(nextBigger(2017)); // 2071
 // console.log(nextBigger(414)); // 441
