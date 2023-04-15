@@ -25,7 +25,7 @@ function nextBigger(n) {
   return Number(digits.join(""));
 }
 
-//Solution 1b: replace for loop with while loop
+// Solution 1b: replace for loop with while loop
 /* function nextBigger(n) {
   // Convert the number to an array of digits
   const digits = [...n.toString()].map(Number);
@@ -56,7 +56,7 @@ function nextBigger(n) {
   return Number(digits.join(""));
 } */
 
-console.log(nextBigger(12)); // 21
+// console.log(nextBigger(12)); // 21
 // console.log(nextBigger(513)); // 531
 // console.log(nextBigger(2017)); // 2071
 // console.log(nextBigger(414)); // 441

@@ -1,13 +1,25 @@
 function add(a, b) {
   let res = "",
     carry = 0;
-  a = a.split("");
-  b = b.split("");
-  while (a.length || b.length || carry) {
-    carry += ~~a.pop() + ~~b.pop();
-    res = (carry % 10) + res;
-    carry = carry > 9;
+  let i = a.length - 1, // index of the last digit in a
+    j = b.length - 1; // index of the last digit in b
+
+  while (i >= 0 || j >= 0 || carry) {
+    // while there are still digits to process or a carry from the previous iteration
+    let sum = carry; // add the carry from the previous iteration
+    if (i >= 0) {
+      // add the current digit from a
+      sum += parseInt(a[i]); // convert the digit from a string to a number
+      i--; // move to the next digit in a
+    }
+    if (j >= 0) {
+      sum += parseInt(b[j]);
+      j--;
+    }
+    res = `${sum % 10}${res}`; // add the current digit to the result
+    carry = Math.floor(sum / 10); // calculate the carry for the next iteration
   }
+
   return res;
 }
 
