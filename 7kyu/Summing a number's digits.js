@@ -1,5 +1,5 @@
-// const sumDigits = number =>
-//   [...String(Math.abs(number))].reduce((a, b) => a + +b, 0);
+const sumDigits = number =>
+  [...String(Math.abs(number))].reduce((a, b) => a + +b, 0);
 
 // Solution 1b
 /* const sumDigits = n =>
