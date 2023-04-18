@@ -5,7 +5,7 @@ function solve(s) {
 }
 
 // Solution 2:
-function solve(s) {
+/* function solve(s) {
   let upperCount = 0;
   let lowerCount = 0;
   for (let i = 0; i < s.length; i++) {
@@ -14,8 +14,10 @@ function solve(s) {
   }
   return upperCount > lowerCount ? s.toUpperCase() : s.toLowerCase();
 }
+ */
 
-console.log(solve("code")); // "code"
+/* console.log(solve("code")); // "code"
 console.log(solve("CODe")); // "CODE"
 console.log(solve("COde")); // "code"
 console.log(solve("Code")); // "code"
+ */
