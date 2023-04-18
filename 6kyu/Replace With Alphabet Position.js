@@ -1,9 +1,12 @@
-const alphabetPosition = text =>
-  text
-    .toLowerCase()
-    .replace(/[^a-z]/g, "")
-    .split("")
-    .map(c => c.charCodeAt(0) - 96).join` `;
+const alphabetPosition = text => {
+  const aCode = "a".charCodeAt(0); // 97
+  return text
+    .replace(/[^a-zA-Z]/g, "") // remove all non-alphabetic characters
+    .toLowerCase() // convert to lowercase
+    .split("") // split into array of characters
+    .map(c => c.charCodeAt(0) - aCode + 1) // convert to alphabet position
+    .join(" "); // join with spaces between each number
+};
 
 // Solution 1b:
 /* const alphabetPosition = text => 
