@@ -40,7 +40,7 @@ function solve(s) {
   return upperCount > lowerCount ? s.toUpperCase() : s.toLowerCase();
 } */
 
-console.log(solve("code")); // "code"
-console.log(solve("CODe")); // "CODE"
-console.log(solve("COde")); // "code"
-console.log(solve("Code")); // "code"
+// console.log(solve("code")); // "code"
+// console.log(solve("CODe")); // "CODE"
+// console.log(solve("COde")); // "code"
+// console.log(solve("Code")); // "code"
