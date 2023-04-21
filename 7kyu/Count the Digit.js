@@ -1,18 +1,19 @@
-function nbDig(n, d) {
-  let res = "";
-  for (let i = 0; i <= n; i++) res += i * i;
+const nbDig = (n, d) =>
+  [...Array(n + 1)]
+    .map((_, i) => i * i)
+    .join("")
+    .split(d).length - 1;
 
-  return res.split(d).length - 1;
-}
+// //Solution 2:
+// function nbDig(n, d) {
+//   let res = "";
+//   for (let i = 0; i <= n; i++) {
+//     res += i * i;
+//   }
+//   return res.split(d).length - 1;
+// }
 
-// Solution 2:
-// const nbDig = (n, d) =>
-//   [...Array(n + 1)]
-//     .map((_, i) => i * i)
-//     .join("")
-//     .split(d).length - 1;
-
-// Solution 3
+// //Solution 3
 // function nbDig(n, d) {
 //   let res = 0;
 //   for (let i = 0; i <= n; i++) {
