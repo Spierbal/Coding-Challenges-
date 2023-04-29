@@ -20,13 +20,13 @@ const removeDuplicateWords = s => [...new Set(s.split(" "))].join(" ");
 }; */
 
 // Solution 4: forEach with includes
-// function removeDuplicateWords(s) {
-//   let uniqueWords = [];
-//   s.split(" ").forEach(current => {
-//     if (!uniqueWords.includes(current)) uniqueWords.push(current);
-//   });
-//   return uniqueWords.join(" ");
-// }
+/* function removeDuplicateWords(s) {
+  let uniqueWords = [];
+  s.split(" ").forEach(current => {
+    if (!uniqueWords.includes(current)) uniqueWords.push(current);
+  });
+  return uniqueWords.join(" ");
+} */
 
 // console.log(
 //   removeDuplicateWords("alpha beta beta gamma gamma delta alpha delta")
