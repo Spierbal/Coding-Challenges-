@@ -1,7 +1,7 @@
 const rowWeights = array => {
   return array.reduce(
     (acc, curr, i) => {
-      acc[i % 2] += curr;
+      acc[i % 2] += curr; // same as (i % 2 === 0) acc[0] += curr; else acc[1] += curr;
       return acc;
     },
     [0, 0]
@@ -19,7 +19,6 @@ const rowWeights = array => {
   for (let i = 0; i < array.length; i++) {
     teams[i % 2] += array[i]; 
   }
-
   return teams;
 } */
 
@@ -34,7 +33,7 @@ const rowWeights = array => {
   return teams;
 } */
 
-/* console.log(rowWeights([80])); // [80,0]
+console.log(rowWeights([80])); // [80,0]
 console.log(rowWeights([100, 50])); // [100,50]
 console.log(rowWeights([50, 60, 70, 80])); //[120,140]
 console.log(rowWeights([13, 27, 49])); //, [62,27]
@@ -44,4 +43,3 @@ console.log(rowWeights([0])); // [0,0]
 console.log(rowWeights([100, 51, 50, 100])); // [150,151]
 console.log(rowWeights([39, 84, 74, 18, 59, 72, 35, 61])); // [207,235]
 console.log(rowWeights([0, 1, 0])); // [0,1]
- */
