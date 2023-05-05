@@ -20,6 +20,7 @@ const lastSurvivor = (char, coords) =>
   return arr.join("");
 } */
 
-console.log(lastSurvivor("abc", [1, 1])); // 'a'
+/* console.log(lastSurvivor("abc", [1, 1])); // 'a'
 console.log(lastSurvivor("c", [])); // 'c'
 console.log(lastSurvivor("zbk", [2, 1])); // 'z'
+ */
