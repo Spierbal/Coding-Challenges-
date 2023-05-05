@@ -26,14 +26,14 @@ function factorial(n) {
   return [...Array(n)].map((_, i) => i + 1).reduce((a, b) => a * b, 1);
 } */
 
-// Array.from() with reduce 1ms
+// Array.from() with reduce
 /* function factorial(n) {
   if (n < 0 || n > 12) throw new RangeError();
 
   return Array.from({ length: n }, (_, i) => i + 1).reduce((a, b) => a * b, 1);
 } */
 
-// Recursion solution 793 2ms
+// Recursion solution
 /* function factorial(n) {
   if (n < 0 || n > 12) throw new RangeError();
 
