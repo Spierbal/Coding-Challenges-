@@ -1,14 +1,43 @@
-const capitalize = s => [alternateCase(s), alternateUpperCase(s)];
-
-function alternateCase(s) {
-  return [...s].map((c, i) => (i % 2 === 0 ? c.toUpperCase() : c)).join("");
+// Solution 1: map() solution with join()
+function capitalize(s) {
+  const even = [...s]
+    .map((c, i) => (i % 2 === 0 ? c.toUpperCase() : s[i]))
+    .join("");
+  const odd = [...s].map((c, i) => (i % 2 ? c.toUpperCase() : s[i])).join("");
+  return [even, odd];
 }
 
-function alternateUpperCase(s) {
-  return [...s].map((c, i) => (i % 2 !== 0 ? c.toUpperCase() : c)).join("");
-}
+// Solution 2: for loop with ternary operator
+/* function capitalize(s) {
+  let even = "",
+    odd = "";
 
-// Solution 2
+  for (let i = 0; i < s.length; i++) {
+    i % 2 === 0 ? (even += s[i].toUpperCase()) : (even += s[i]);
+    i % 2 ? (odd += s[i].toUpperCase()) : (odd += s[i]);
+  }
+
+  return [even, odd];
+} */
+
+// Solution 2b: for loop with if statement
+/* function capitalize(s) {
+  let even = "";
+  let odd = "";
+
+  for (let i = 0; i < s.length; ++i) {
+    if (i % 2 === 0) {
+      even += s[i].toUpperCase();
+      odd += s[i];
+    } else {
+      even += s[i];
+      odd += s[i].toUpperCase();
+    }
+  }
+  return [even, odd];
+} */
+
+// Solution 3: reduce()
 /* function capitalize(s) {
   return [...s].reduce(
     (acc, c, i) => {
@@ -20,29 +49,5 @@ function alternateUpperCase(s) {
   );
 } */
 
-// Solution 3:
-/* function capitalize(s) {
-  let a = "";
-  let b = "";
-
-  for (let i = 0; i < s.length; ++i) {
-    if (i % 2 === 0) {
-      a += s[i].toUpperCase();
-      b += s[i];
-    } else {
-      a += s[i];
-      b += s[i].toUpperCase();
-    }
-  }
-  return [a, b];
-} */
-
-// solution 4: clever
-/* function capitalize(s) {
-  return [0, 1].map(b =>
-    [...s].map((c, i) => (i % 2 === b ? c.toUpperCase() : c)).join("")
-  );
-} */
-
 // console.log(capitalize("abcdef")); // --> ['AbCdEf', 'aBcDeF'])
-// console.log(capitalize("codewars")) //--> ['CoDeWaRs', 'cOdEwArS']);
+// console.log(capitalize("codewars")); //--> ['CoDeWaRs', 'cOdEwArS']);
