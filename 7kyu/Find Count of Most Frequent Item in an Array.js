@@ -1,11 +1,11 @@
 // Solution 1: Map
-/* function mostFrequentItemCount(collection) {
+function mostFrequentItemCount(collection) {
   const count = new Map();
   for (const item of collection) {
     count.set(item, count.get(item) + 1 || 1);
   }
-  return Math.max(...count.values()); 
-} */
+  return Math.max(...count.values());
+}
 
 // Solution 2: Reduce()
 /* function mostFrequentItemCount(collection) {
