@@ -1,18 +1,23 @@
-function mostFrequentItemCount(collection) {
-  const count = {};
-  let max = 0;
-
+// Solution 1: Map
+function mostFrequentItemCount2(collection) {
+  const count = new Map();
   for (const item of collection) {
-    count[item] = count[item] + 1 || 1;
+    count.set(item, (count.get(item) || 0) + 1);
   }
-  for (const item in count) {
-    max = count[item];
-  }
-  return max;
+  return Math.max(...count.values());
 }
 
-// Solution 2:
-/* function mostFrequentItemCount(collection) {
+// Solution 2: Reduce()
+/* function mostFrequentItemCount1(collection) {
+  const count = collection.reduce((acc, item) => {
+    acc[item] = acc[item] + 1 || 1;
+    return acc;
+  }, {});
+  return Math.max(...Object.values(count)); // 2
+} */
+
+// Solution 3: forEach()
+/* function mostFrequentItemCount3(collection) {
   const count = {};
   let max = 0;
 
@@ -25,15 +30,19 @@ function mostFrequentItemCount(collection) {
   return max;
 } */
 
-// Solution 3:
-/* function mostFrequentItemCount(collection) {
-  if (!collection.length) return 0;
+// Solution 4: for loop
+function mostFrequentItemCount4(collection) {
+  const count = {};
+  let maxCount = 0;
 
-  let counts = {};
-  for (const item of collection) {
-    counts[item] = (counts[item] || 0) + 1;
+  for (let i = 0; i < collection.length; i++) {
+    const item = collection[i];
+    count[item] = (count[item] || 0) + 1;
+    if (count[item] > maxCount) {
+      maxCount = count[item];
+    }
   }
-  return Math.max(...Object.values(counts));
-} */
+  return maxCount;
+}
 
-// console.log(mostFrequentItemCount([3, -1, -1])); // 2
+console.log(mostFrequentItemCount([3, -1, -1])); // 2
