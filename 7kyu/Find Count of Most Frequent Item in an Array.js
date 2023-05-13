@@ -13,6 +13,7 @@ function mostFrequentItemCount(collection) {
 // Solution 2: Reduce()
 /* function mostFrequentItemCount(collection) {
   if (!collection.length) return 0;
+
   const count = collection.reduce((acc, item) => {
     acc[item] = acc[item] + 1 || 1;
     return acc;
@@ -22,6 +23,8 @@ function mostFrequentItemCount(collection) {
 
 // Solution 3: forEach()
 /* function mostFrequentItemCount(collection) {
+  if (!collection.length) return 0;
+
   const count = {};
   let max = 0;
 
