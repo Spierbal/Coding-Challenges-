@@ -1,7 +1,10 @@
 // Solution 1: Map
 function mostFrequentItemCount(collection) {
-  const count = new Map();
-  for (const item of collection) {
+  if (!collection.length) return 0;
+
+  let count = new Map();
+
+  for (let item of collection) {
     count.set(item, count.get(item) + 1 || 1);
   }
   return Math.max(...count.values());
