@@ -9,7 +9,7 @@ function mostFrequentItemCount(collection) {
 
 // Solution 2: Reduce()
 /* function mostFrequentItemCount(collection) {
-  if (collection.length === 0) return 0;
+  if (!collection.length) return 0;
   const count = collection.reduce((acc, item) => {
     acc[item] = acc[item] + 1 || 1;
     return acc;
@@ -42,7 +42,7 @@ function mostFrequentItemCount(collection) {
   return maxCount;
 } */
 
-// console.log(mostFrequentItemCount([3, -1, -1])); // 2
+// console.log(mostFrequentItemCount([3, -1, -1])); // 2 (there are two occurrences of -1)
 // console.log(
 //   mostFrequentItemCount([3, -1, -1, -1, 2, 3, -1, 3, -1, 2, 4, 9, 3])
-// ); // 5
+// ); // 5 (there are 5 occurrences of -1)
