@@ -34,6 +34,8 @@ function mostFrequentItemCount(collection) {
 
 // Solution 4: for loop
 /* function mostFrequentItemCount(collection) {
+  if (!collection.length) return 0;
+
   const count = {};
   let maxCount = 0;
 
