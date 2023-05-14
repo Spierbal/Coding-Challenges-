@@ -1,5 +1,5 @@
 // Solution 1: Map Object
-function mostFrequentItemCount1(collection) {
+function mostFrequentItemCount(collection) {
   if (!collection.length) return 0;
 
   const count = new Map();
@@ -11,7 +11,7 @@ function mostFrequentItemCount1(collection) {
 }
 
 // Solution 2: Reduce()
-/* function mostFrequentItemCount2(collection) {
+/* function mostFrequentItemCount(collection) {
   if (!collection.length) return 0;
 
   const count = collection.reduce((acc, item) => {
@@ -22,7 +22,7 @@ function mostFrequentItemCount1(collection) {
 } */
 
 // Solution 3: forEach()
-/* function mostFrequentItemCount3(collection) {
+/* function mostFrequentItemCount(collection) {
   if (!collection.length) return 0;
 
   const count = {};
@@ -34,7 +34,7 @@ function mostFrequentItemCount1(collection) {
 } */
 
 // Solution 4: for of loop
-/* function mostFrequentItemCount4(collection) {
+/* function mostFrequentItemCount(collection) {
   if (!collection.length) return 0;
   const count = {};
 
