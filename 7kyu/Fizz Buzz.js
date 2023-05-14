@@ -1,11 +1,11 @@
-/* const fizzbuzz = n =>
+const fizzbuzz = n =>
   [...Array(n)].map((_, i) => {
     i++;
     if (i % 15 === 0) return "FizzBuzz";
     if (i % 3 === 0) return "Fizz";
     if (i % 5 === 0) return "Buzz";
     return i;
-  }); */
+  });
 
 // Solution 1b: // ternary operator
 /* const fizzbuzz = n =>
