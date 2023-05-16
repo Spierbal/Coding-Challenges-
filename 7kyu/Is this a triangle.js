@@ -1,5 +1,5 @@
 // Solution 1: Triangle Inequality Theorem
-const isTriangle1 = (a, b, c) => a + b > c && a + c > b && b + c > a;
+const isTriangle = (a, b, c) => a + b > c && a + c > b && b + c > a;
 
 // Solution 2: Triangle Inequality Theorem + Max
 /* function isTriangle(a, b, c) {
@@ -9,7 +9,7 @@ const isTriangle1 = (a, b, c) => a + b > c && a + c > b && b + c > a;
 } */
 
 // Solution 3: Triangle Inequality Theorem + Every
-/* const isTriangle2 = (a, b, c) =>
+/* const isTriangle = (a, b, c) =>
   [a, b, c].every(side => side > 0) && a + b > c && a + c > b && b + c > a; */
 
 // console.log(isTriangle(1, 2, 2)); // true
