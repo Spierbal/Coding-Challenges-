@@ -1,4 +1,4 @@
-function findNextSquare1(sq) {
+function findNextSquare(sq) {
   const root = Math.sqrt(sq);
   if (root % 1 !== 0) return -1;
   return (root + 1) ** 2;
