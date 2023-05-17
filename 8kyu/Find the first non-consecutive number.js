@@ -21,5 +21,5 @@ function firstNonConsecutive(arr) {
   return result == undefined ? null : result;
 } */
 
-// console.log(firstNonConsecutive([1, 2, 3, 4, 6, 7, 8])); // --> 6
-// console.log(firstNonConsecutive([1, 2, 3, 4])); // --> null
+// console.log(firstNonConsecutive([1, 2, 3, 4, 6, 7, 8])); // --> 6 (5 is missing)
+// console.log(firstNonConsecutive([1, 2, 3, 4])); // --> null (no missing numbers)

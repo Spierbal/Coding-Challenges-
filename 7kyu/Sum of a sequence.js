@@ -23,7 +23,7 @@ function sequenceSum(begin, end, step) {
 /* const sequenceSum = (begin, end, step) =>
   begin > end ? 0 : begin + sequenceSum(begin + step, end, step); */
 
-// console.log(sequenceSum(2, 6, 2)); // 12
-// console.log(sequenceSum(1, 5, 1)); // 15
-// console.log(sequenceSum(1, 5, 3)); // 5
-// console.log(sequenceSum(100, 5, 2)); // 5
+// console.log(sequenceSum(2, 6, 2)); // 12 (2 + 4 + 6)
+// console.log(sequenceSum(1, 5, 1)); // 15 (1 + 2 + 3 + 4 + 5)
+// console.log(sequenceSum(1, 5, 3)); // 5 (1 + 4)
+// console.log(sequenceSum(100, 5, 2)); // 5 (empty sum)
