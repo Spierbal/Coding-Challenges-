@@ -31,5 +31,5 @@ function solution(digits) {
   return maxSequence;
 } */
 
-console.log(solution("1234567898765")); // 98765
-console.log(solution("731674765")); // 74765
+// console.log(solution("1234567898765")); // 98765
+// console.log(solution("731674765")); // 74765
