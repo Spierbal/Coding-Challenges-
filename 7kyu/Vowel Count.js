@@ -1,15 +1,25 @@
-// Solution 1:
-const getCount = str => (str.match(/[aeiou]/g) || []).length;
+// Solution 1: .match() and .length
+function getCount(str) {
+  const vowelRegex = /[aeiou]/g;
+  return (str.match(vowelRegex) || []).length;
+}
 
-// Solution 2:
-// const getCount = str =>
-//   str.split("").reduce((total, item) => total + "aeiou".includes(item), 0);
+/* 
+// Solution 1b: More concise 
+const getCount = str => (str.match(/[aeiou]/g) || []).length; */
 
-// Solution 3:
-// const getCount = str => str.split("").filter(el => "aeiou".includes(el)).length;
+/*
+// Solution 2: .split() and .filter()
+const getCount = str => str.split("").filter(el => "aeiou".includes(el)).length; */
 
-// Solution 4:
-/* function getCount(str) {
+/* 
+// Solution 3: .reduce() 
+const getCount = str =>
+  str.split("").reduce((count, char) => count + "aeiou".includes(char), 0); */
+
+/* 
+// Solution 4: for of loop
+function getCount(str) {
   let vowelsCount = 0;
   const vowels = ["a", "e", "i", "o", "u"];
   
@@ -22,5 +32,5 @@ const getCount = str => (str.match(/[aeiou]/g) || []).length;
 } */
 
 // console.log(getCount("pyc")); // --> 0
-// console.log(getCount("pear tree")) // --> 4
+// console.log(getCount("pear tree")); // --> 4
 // console.log(getCount("o a kak ushakov lil vo kashu kakao")); // --> 13
