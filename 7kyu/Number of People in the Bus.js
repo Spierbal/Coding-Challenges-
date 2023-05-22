@@ -1,9 +1,9 @@
 // Solution 1: reduce()
-const number1 = busStops => busStops.reduce((a, b) => a + b[0] - b[1], 0);
+const number = busStops => busStops.reduce((a, b) => a + b[0] - b[1], 0);
 
 /* 
 // Solution 2: for loop
-function number2(busStops) {
+function number(busStops) {
   let totalPassengers = 0;
 
   for (let i = 0; i < busStops.length; i++) {
@@ -14,7 +14,7 @@ function number2(busStops) {
 
 /* 
 // Solution 2b: for of loop
-function number4(busStops) {
+function number(busStops) {
   let totalPassengers = 0;
 
   for (let stop of busStops) {
