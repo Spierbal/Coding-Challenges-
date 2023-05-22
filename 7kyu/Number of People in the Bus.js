@@ -1,13 +1,24 @@
 // Solution 1: reduce()
-const number = busStops => busStops.reduce((a, b) => a + b[0] - b[1], 0);
+const number1 = busStops => busStops.reduce((a, b) => a + b[0] - b[1], 0);
 
 /* 
-// Solution 2: for loop 
-function number(busStops) {
+// Solution 2: for loop
+function number2(busStops) {
   let totalPassengers = 0;
 
   for (let i = 0; i < busStops.length; i++) {
     totalPassengers += busStops[i][0] - busStops[i][1];
+  }
+  return totalPassengers;
+} */
+
+/* 
+// Solution 2b: for of loop
+function number4(busStops) {
+  let totalPassengers = 0;
+
+  for (let stop of busStops) {
+    totalPassengers += stop[0] - stop[1];
   }
   return totalPassengers;
 } */
