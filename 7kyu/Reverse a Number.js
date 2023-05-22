@@ -1,15 +1,17 @@
+// Solution 1:
 const reverseNumber = n =>
-  Math.sign(n) * [...`${Math.abs(n)}`].reverse().join("");
+  [...String(Math.abs(n))].reverse().join("") * Math.sign(n);
 
-/* const reverseNumber = n =>
-  (n >= 0 ? 1 : -1) * String(Math.abs(n)).split("").reverse().join("");
+/* 
+// Solution 1b: 
+const reverseNumber1 = n =>
+  Math.sign(n) * [...`${Math.abs(n)}`].reverse().join("");
  */
 
-/*   function reverseNumber(n) {
-    return n <= 0
-      ? String(Math.abs(n)).split("").reverse().join("") * -1
-      : Number(String(n).split("").reverse().join(""));
-  }
+/* 
+// Solution 1c:
+const reverseNumber = n =>
+  (n >= 0 ? 1 : -1) * String(Math.abs(n)).split("").reverse().join("");
  */
 
 // console.log(reverseNumber(123)); // --> 321
