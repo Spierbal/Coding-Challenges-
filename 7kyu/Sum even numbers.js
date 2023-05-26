@@ -4,13 +4,13 @@ const sumEvenNumbers = input =>
 
 /* 
 //  Solution 2: filter and reduce
-function sumEvenNumbers2(input) {
+function sumEvenNumbers(input) {
   return input.filter(x => x % 2 === 0).reduce((a, b) => a + b, 0);
 } */
 
 /* 
 // Solution 3: for loop
-function sumEvenNumbers3(input) {
+function sumEvenNumbers(input) {
   let sum = 0;
 
   for (let i = 0; i < input.length; i++) {
@@ -21,7 +21,7 @@ function sumEvenNumbers3(input) {
 
 /* 
 // Solution 3b: for of loop
-function sumEvenNumbers4(input) {
+function sumEvenNumbers(input) {
   let sum = 0;
 
   for (let num of input) {
