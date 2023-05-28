@@ -1,3 +1,4 @@
+// Solution 1: map
 const toNumberArray = stringarray => stringarray.map(Number);
 
 /* 
