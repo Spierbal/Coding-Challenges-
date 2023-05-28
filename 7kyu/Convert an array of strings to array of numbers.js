@@ -1,5 +1,10 @@
-// Solution 1: map
+// Solution 1: map with parseFloat
+const toNumberArray = stringarray => stringarray.map(parseFloat);
+
+/* 
+// Solution 1b: map with Number
 const toNumberArray = stringarray => stringarray.map(Number);
+ */
 
 /* 
 // Solution 2: for loop
