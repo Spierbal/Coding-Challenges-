@@ -3,6 +3,11 @@ const sumCubes = n =>
   [...Array(n)].reduce((sum, _, i) => sum + (i + 1) ** 3, 0);
 
 /* 
+// Solution 1b: Reduce with Math.pow
+const sumCubes = n =>
+  [...Array(n)].reduce((sum, _, i) => sum + Math.pow(i + 1, 3), 0); */
+/* 
+
 // Solution 2:  For loop
 function sumCubes(n) {
   let sum = 0;
@@ -13,7 +18,15 @@ function sumCubes(n) {
 } */
 
 /* 
-// Solution 3: Math formula (Most efficient)
+// Solution 3: recursive 
+function sumCubes(n) {
+  if (n === 1) return 1;
+  return n ** 3 + sumCubes(n - 1);
+}
+ */
+
+/* 
+// Solution 4: Math formula (Most efficient)
 const sumCubes = n => ((n * (n + 1)) / 2) ** 2; 
 */
 
