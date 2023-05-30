@@ -17,9 +17,9 @@ function sumCubes(n) {
 const sumCubes = n => ((n * (n + 1)) / 2) ** 2; 
 */
 
-// console.log(sumCubes(1)); // 1
-// console.log(sumCubes(2)); // 9
-// console.log(sumCubes(3)); // 36
+// console.log(sumCubes(1)); // 1 (sum of the cubes of all integers from 1 to 1 is 1)
+// console.log(sumCubes(2)); // 9 (sum of the cubes of 1 and 2 is 1 + 8 = 9)
+// console.log(sumCubes(3)); // 36 (sum of the cubes of 1, 2, and 3 is 1 + 8 + 27 = 36)
 // console.log(sumCubes(4)); // 100
 // console.log(sumCubes(5)); // 225
 // console.log(sumCubes(10)); // 3025
