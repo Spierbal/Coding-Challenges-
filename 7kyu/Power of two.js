@@ -2,11 +2,6 @@
 const isPowerOfTwo = n => Number.isInteger(Math.log2(n));
 
 /* 
-// Solution 1b:
-const isPowerOfTwo = n => Math.log2(n) % 1 === 0;
- */
-
-/* 
 // Solution 2: while loop
 function isPowerOfTwo(n) {
   while (n % 2 === 0 && n > 1) {
