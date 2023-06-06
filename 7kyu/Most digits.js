@@ -25,6 +25,13 @@ function findLongest(array) {
     }
   }
   return longest;
+} */
+
+/* 
+// Solution 3: 
+function findLongest(array) {
+  const maxLength = Math.max(...array.map(n => String(n).length));
+  return array[array.findIndex(n => String(n).length === maxLength)];
 }
  */
 
