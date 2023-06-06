@@ -13,6 +13,21 @@ function findLongest(array) {
   });
 } */
 
+/* 
+// Solution 2: for loop
+function findLongest(array) {
+  let longest = array[0];
+
+  for (let i = 1; i < array.length; i++) {
+    const current = array[i];
+    if (String(current).length > String(longest).length) {
+      longest = current;
+    }
+  }
+  return longest;
+}
+ */
+
 // console.log(findLongest([1, 10, 100])); // 100
 // console.log(findLongest([9000, 8, 800])); // 9000
 // console.log(findLongest([8, 900, 500])); // 900
