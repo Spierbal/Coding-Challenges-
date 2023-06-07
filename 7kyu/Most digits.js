@@ -6,15 +6,20 @@ function findLongest(array) {
 /* 
 // Solution 1b: More readable
 function findLongest(array) {
-  return array.reduce((longest, curr) => {
+  return array.reduce((longest, current) => {
     const longestLength = String(longest).length;
-    const currLength = String(curr).length;
-    return currLength > longestLength ? curr : longest;
+    const currentLength = String(current).length;
+    return currentLength > longestLength ? current : longest;
   });
 } */
 
 /* 
-// Solution 2: for loop
+// Solution 2: Math.max and find
+const findLongest = array =>
+  array.find(n => `${n}`.length === Math.max(...array.map(n => `${n}`.length))); */
+
+/* 
+// Solution 3: for loop
 function findLongest(array) {
   let longest = array[0];
 
@@ -26,14 +31,6 @@ function findLongest(array) {
   }
   return longest;
 } */
-
-/* 
-// Solution 3: 
-function findLongest(array) {
-  const maxLength = Math.max(...array.map(n => String(n).length));
-  return array[array.findIndex(n => String(n).length === maxLength)];
-}
- */
 
 // console.log(findLongest([1, 10, 100])); // 100
 // console.log(findLongest([9000, 8, 800])); // 9000
