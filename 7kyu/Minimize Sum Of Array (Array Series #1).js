@@ -1,10 +1,17 @@
 // Solution 1: reduce
-function minSum(arr) {
+const minSum = arr => {
   const sorted = [...arr].sort((a, b) => a - b);
   return (
     sorted.reduce((sum, n, i) => sum + n * sorted[sorted.length - 1 - i], 0) / 2
   );
-}
+};
+
+/* 
+// Solution 1b: reduce that mutates the array
+function minSum(arr) {
+  arr.sort((a, b) => a - b);
+  return arr.reduce((sum, n, i) => sum + n * arr[arr.length - 1 - i], 0) / 2;
+} */
 
 /* 
 // Solution 2: for loop
@@ -17,6 +24,6 @@ function minSum(arr) {
   return sum;
 } */
 
-// console.log(minSum([5, 4, 2, 3])); // 22
-// console.log(minSum([12, 6, 10, 26, 3, 24])); // 342
-// console.log(minSum([9, 2, 8, 7, 5, 4, 0, 6])); // 74
+console.log(minSum([5, 4, 2, 3])); // 22
+console.log(minSum([12, 6, 10, 26, 3, 24])); // 342
+console.log(minSum([9, 2, 8, 7, 5, 4, 0, 6])); // 74
