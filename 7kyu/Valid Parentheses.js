@@ -12,7 +12,20 @@ function validParentheses(parenStr) {
 }
 
 /* 
-// Solution 1b: for loop
+// Solution 1b: more concise for of loop
+function validParentheses(parenStr) {
+  let counter = 0;
+
+  for (let char of parenStr) {
+    counter += char === "(" ? 1 : char === ")" ? -1 : 0;
+
+    if (counter < 0) return false;
+  }
+  return counter === 0;
+} */
+
+/* 
+// Solution 1c: for loop
 function validParentheses(parentStr) {
   let counter = 0;
 
@@ -33,7 +46,9 @@ function validParentheses(parenStr) {
   for (let char of parenStr) {
     if (char === "(") stack.push(char);
     if (char === ")") {
-      if (stack.length === 0) return false;
+      if (stack.length === 0) {
+        return false;
+      }
       stack.pop();
     }
   }
