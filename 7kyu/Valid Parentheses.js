@@ -1,14 +1,14 @@
 // Solution 1: for of loop
 function validParentheses(parenStr) {
-  let count = 0;
+  let counter = 0;
 
   for (let char of parenStr) {
-    if (char === "(") count++;
-    if (char === ")") count--;
+    if (char === "(") counter++;
+    if (char === ")") counter--;
 
-    if (count < 0) return false;
+    if (counter < 0) return false;
   }
-  return count === 0;
+  return counter === 0;
 }
 
 /* 
