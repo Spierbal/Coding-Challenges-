@@ -1,6 +1,7 @@
 const breakChocolate = (n, m) => (n * m <= 0 ? 0 : n * m - 1);
 
-/* // Solution 1b:
+/* 
+// Solution 1b:
 function breakChocolate(n, m) {
   if (n <= 0 || m <= 0) return 0;
 
