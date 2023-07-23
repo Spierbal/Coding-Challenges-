@@ -1,5 +1,8 @@
-const reverseWords = str =>
-  str.split` `.map(w => w.split``.reverse().join``).join` `;
+const reverseWords = s =>
+  s
+    .split(" ")
+    .map(w => w.split("").reverse().join(""))
+    .join(" ");
 
 //Solution 1b:
 /* const reverseWords = str =>
@@ -17,4 +20,4 @@ const reverseWords = str =>
     .join(" ");
 } */
 
-//console.log(reverseWords("This is an example!")); //"sihT si na !elpmaxe"
+console.log(reverseWords("This is an example!")); //"sihT si na !elpmaxe"
