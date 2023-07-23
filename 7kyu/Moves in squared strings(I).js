@@ -17,8 +17,8 @@ const horMirror = str => str.reverse();
 
 const oper = (fct, str) => fct(str.split("\n")).join("\n"); */
 
-console.log(oper(vertMirror, "hSgdHQ\nHnDMao\nClNNxX\niRvxxH\nbqTVvA\nwvSyRu")); // "QHdgSh\noaMDnH\nXxNNlC\nHxxvRi\nAvVTqb\nuRySvw");
-console.log(oper(vertMirror, "IzOTWE\nkkbeCM\nWuzZxM\nvDddJw\njiJyHF\nPVHfSx")); // "EWTOzI\nMCebkk\nMxZzuW\nwJddDv\nFHyJij\nxSfHVP");
+// console.log(oper(vertMirror, "hSgdHQ\nHnDMao\nClNNxX\niRvxxH\nbqTVvA\nwvSyRu")); // "QHdgSh\noaMDnH\nXxNNlC\nHxxvRi\nAvVTqb\nuRySvw");
+// console.log(oper(vertMirror, "IzOTWE\nkkbeCM\nWuzZxM\nvDddJw\njiJyHF\nPVHfSx")); // "EWTOzI\nMCebkk\nMxZzuW\nwJddDv\nFHyJij\nxSfHVP");
 
-console.log(oper(horMirror, "lVHt\nJVhv\nCSbg\nyeCt")); //, "yeCt\nCSbg\nJVhv\nlVHt"
-console.log(oper(horMirror, "njMK\ndbrZ\nLPKo\ncEYz")); //, "cEYz\nLPKo\ndbrZ\nnjMK"
+// console.log(oper(horMirror, "lVHt\nJVhv\nCSbg\nyeCt")); //, "yeCt\nCSbg\nJVhv\nlVHt"
+// console.log(oper(horMirror, "njMK\ndbrZ\nLPKo\ncEYz")); //, "cEYz\nLPKo\ndbrZ\nnjMK"
