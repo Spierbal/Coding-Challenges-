@@ -1,11 +1,13 @@
 //Solution 1: sort(), localeCompare() & slice()
 const last = x =>
   x.split(" ").sort((a, b) => a.slice(-1).localeCompare(b.slice(-1)));
+
 /* 
 // Solution 2: sort(), localeCompare() & at()
 const last = x =>
   x.split(" ").sort((a, b) => a.at(-1).localeCompare(b.at(-1))); */
 /* 
+
 // Solution 3: sort(), slice & ternary operator
 function last(x) {
   return x
