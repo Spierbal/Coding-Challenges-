@@ -1,12 +1,12 @@
-// Solution 1: ternary operator
-const isLeapYear = year =>
-  year % 100 === 0 ? year % 400 === 0 : year % 4 === 0;
-
-/* 
-// Solution 1b: using logical OR
+// Solution 1: using logical OR
 const isLeapYear = year =>
   (year % 100 !== 0 && year % 4 === 0) || year % 400 === 0;
-   */
+
+/* 
+// Solution 1b: ternary operator
+const isLeapYear = year =>
+  year % 100 === 0 ? year % 400 === 0 : year % 4 === 0;
+ */
 
 /* 
 // Solution 2: using new Date()
