@@ -27,7 +27,7 @@ function solve(words) {
   });
 } */
 
-console.log(solve(["abode", "ABc", "xyzD"]));
-console.log(solve(["abide", "ABc", "xyz"])); // [4,3,1]);
-console.log(solve(["IAMDEFANDJKL", "thedefgh", "xyzDEFghijabc"])); // [6, 5, 7]);
-console.log(solve(["encode", "abc", "xyzD", "ABmD"])); // [1, 3, 1, 3]);
+// console.log(solve(["abode", "ABc", "xyzD"]));
+// console.log(solve(["abide", "ABc", "xyz"])); // [4,3,1]);
+// console.log(solve(["IAMDEFANDJKL", "thedefgh", "xyzDEFghijabc"])); // [6, 5, 7]);
+// console.log(solve(["encode", "abc", "xyzD", "ABmD"])); // [1, 3, 1, 3]);
