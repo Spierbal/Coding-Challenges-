@@ -1,5 +1,5 @@
 // Solution 1: Concise solution with Set
-const hasUniqueChars1 = str => new Set([...str]).size === str.length;
+const hasUniqueChars = str => new Set([...str]).size === str.length;
 
 /* 
 // Solution 1b: Long solution with Set
@@ -14,7 +14,7 @@ function hasUniqueChars(str) {
 
 /* 
 // Solution 2: use object as a map
-function hasUniqueChars3(str) {
+function hasUniqueChars(str) {
   const charMap = {};
   for (const char of str) {
     if (charMap[char]) return false;
