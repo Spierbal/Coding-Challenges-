@@ -1,5 +1,5 @@
 // Solution 1: while loop
-function palindromeChainLength(n) {
+function palindromeChainLength1(n) {
   const isPalindrome = num => String(num) === [...String(n)].reverse().join("");
 
   let steps = 0;
@@ -8,7 +8,6 @@ function palindromeChainLength(n) {
     n += Number([...String(n)].reverse().join(""));
     steps++;
   }
-
   return steps;
 }
 
