@@ -11,7 +11,8 @@ function evaporator(content, evap_per_day, threshold) {
 }
 
 // Solution 1b: for loop
-/* function evaporator(content, evap_per_day, threshold) {
+/* 
+function evaporator(content, evap_per_day, threshold) {
   let currContent = content;
   const thresholdValue = (threshold / 100) * content;
   let days;

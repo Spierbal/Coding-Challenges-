@@ -1,16 +1,16 @@
 // Solution 1: map() solution with join()
-function capitalize(s) {
-  const even = [...s]
-    .map((c, i) => (i % 2 === 0 ? c.toUpperCase() : s[i]))
-    .join("");
-  const odd = [...s].map((c, i) => (i % 2 ? c.toUpperCase() : s[i])).join("");
-  return [even, odd];
-}
+// function capitalize(s) {
+//   let even = [...s].map((c, i) => (i % 2 === 0 ? c.toUpperCase() : c)).join("");
+//   let odd = [...s].map((c, i) => (i % 2 !== 0 ? c.toUpperCase() : c)).join("");
 
+//   return [even, odd];
+// }
+
+/* 
 // Solution 2: for loop with ternary operator
-/* function capitalize(s) {
-  let even = "",
-    odd = "";
+function capitalize(s) {
+  let even = "";
+  let odd = "";
 
   for (let i = 0; i < s.length; i++) {
     i % 2 === 0 ? (even += s[i].toUpperCase()) : (even += s[i]);

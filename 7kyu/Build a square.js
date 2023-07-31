@@ -1,4 +1,4 @@
-const generateShape = n => [...Array(n)].map(() => "+".repeat(n)).join("\n");
+// const generateShape = n => [...Array(n)].map(() => "+".repeat(n)).join("\n");
 
 /* 
 // Solution 1b: 
@@ -17,8 +17,8 @@ const generateShape = n => {
   let str = "";
 
   for (let i = 0; i < n; i++) {
-    str += "+".repeat(n);
-    if (i !== n - 1) str += "\n";
+    str += "+".repeat(n); // Repeat "+" n times and add to str
+    if (i !== n - 1) str += "\n"; // Add new line if not the last line
   }
   return str;
 }; */

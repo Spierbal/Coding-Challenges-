@@ -1,7 +1,5 @@
 // Solution 1: filter, slice
-function evenNumbers(array, number) {
-  return array.filter(x => x % 2 == 0).slice(-number);
-}
+const evenNumbers = (arr, num) => arr.filter(x => x % 2 == 0).slice(-num);
 
 /* 
 // Solution 2: for loop, unshift, break
@@ -26,6 +24,6 @@ function evenNumbers(array, number) {
   return evenArr;
 } */
 
-// console.log(evenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9], 3)); // [4, 6, 8]
-// console.log(evenNumbers([-22, 5, 3, 11, 26, -6, -7, -8, -9, -8, 26], 2)); // [-8, 26]
-// console.log(evenNumbers([6, -25, 3, 7, 5, 5, 7, -3, 23], 1)); // [6]
+// console.log(evenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9], 3)); // --> [4, 6, 8]  // (last 3 even numbers)
+// console.log(evenNumbers([-22, 5, 3, 11, 26, -6, -7, -8, -9, -8, 26], 2));  //  -->  [-8, 26]
+// console.log(evenNumbers([6, -25, 3, 7, 5, 5, 7, -3, 23], 1)); // --> [6] // (last even number)

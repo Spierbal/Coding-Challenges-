@@ -11,11 +11,13 @@ function bump(x) {
     }, 0);
     
     return bumps <= 15 ? "Woohoo!" : "Car Dead";
-}  
+}   */
 
-// Solution 2b: More concise
+/* 
+// Solution 2b: reduce (concise)
 const bump = x =>
-  [...x].reduce((a, b) => a + (b === "n"), 0) <= 15 ? "Woohoo!" : "Car Dead"; */
+  [...x].reduce((char, b) => char + (b === "n"), 0) <= 15 ? "Woohoo!" : "Car Dead"; 
+ */
 
 /*
 // Solution 3: split()
@@ -48,5 +50,5 @@ const bump = x => ((x.match(/n/g) || []).length <= 15 ? "Woohoo!" : "Car Dead");
 // console.log(bump("nnn_n__n_n___nnnnn___n__nnn__")); // "Woohoo!"
 // console.log(bump("_")); // "Woohoo!"
 // console.log(bump("nnn_n__n_n___nnnnn___n__nnn__")); // "Woohoo!"
-// console.log(bump("_nnnnnnn_n__n______nn__nn_nnn")); // "Car Dead"
+// console.log(bump("_nnnnnnn_n__n__nn_nn_nnn")); // "Car Dead"
 // console.log(bump("______n___n_")); // "Woohoo!"
