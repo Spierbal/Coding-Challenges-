@@ -27,6 +27,7 @@ function solve(s) {
   return upperCount > lowerCount ? s.toUpperCase() : s.toLowerCase();
 } */
 
+/* 
 // Solution 4: using for loop
 function solve(s) {
   let upperCount = 0;
@@ -36,7 +37,7 @@ function solve(s) {
     s[i] === s[i].toUpperCase() ? upperCount++ : lowerCount++;
   }
   return upperCount > lowerCount ? s.toUpperCase() : s.toLowerCase();
-}
+} */
 
 /* 
 // Solution 5: using charCodeAt
