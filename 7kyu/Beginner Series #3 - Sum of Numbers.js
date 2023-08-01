@@ -41,5 +41,3 @@ function getSum(a, b) {
 
 // console.log(getSum(1, 2)); // --> 3  // 1 + 2 = 3
 // console.log(getSum(-1, 2)); // --> 2
-console.log(getSum(5, 2)); // --> 2
-console.log(getSum(10, 3)); // --> 2
