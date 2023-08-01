@@ -1,6 +1,7 @@
 // Solution 1: .map() and .slice()
 function solution(digits) {
   const sequences = [...digits].map((_, i) => Number(digits.slice(i, i + 5)));
+
   return Math.max(...sequences);
 }
 
@@ -19,8 +20,9 @@ function solution(digits) {
   return maxSequence;
 } */
 
+/* 
 // Solution 3b: For loop and .slice()
-/* function solution(digits) {
+function solution(digits) {
   let maxSequence = 0;
   const length = digits.length - 4;
 
@@ -29,7 +31,17 @@ function solution(digits) {
     if (seq > maxSequence) maxSequence = seq;
   }
   return maxSequence;
-} */
+}  */
+
+/* 
+// Solution 4:
+function solution(digits) {
+  return digits.split("").reduce((maxSequence, _, i) => {
+    const sequence = Number(digits.slice(i, i + 5));
+    return sequence > maxSequence ? sequence : maxSequence;
+  }, 0);
+}
+ */
 
 // console.log(solution("1234567898765")); // 98765
 // console.log(solution("731674765")); // 74765
