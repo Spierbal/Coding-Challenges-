@@ -5,6 +5,11 @@ function solution(digits) {
 }
 
 /* 
+// Solution 1b: more consise
+const solution = n => Math.max(...[...n].map((_, i) => +n.slice(i, i + 5)));
+*/
+
+/* 
 // Solution 2: For loop and .slice()
 function solution(digits) {
   let maxSequence = 0;
