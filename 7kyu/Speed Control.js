@@ -1,7 +1,7 @@
 function gps(s, x) {
   if (x.length <= 1) return 0;
 
-  let speeds = [];
+  let arr = [];
 
   for (let i = 1; i < x.length; i++) {
     const distance = x[i] - x[i - 1];
