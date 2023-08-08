@@ -1,11 +1,9 @@
 // Solution 1: map and Math.max
 function gps(s, x) {
   if (x.length <= 1) return 0;
+  const speeds = x.slice(1).map((curr, i) => (3600 * (curr - x[i])) / s);
 
-  const speeds = x.slice(1).map((e, i) => ((e - x[i]) / s) * 3600);
-  const maxSpeed = Math.floor(Math.max(...speeds));
-
-  return maxSpeed;
+  return Math.floor(Math.max(...speeds));
 }
 
 /*  
