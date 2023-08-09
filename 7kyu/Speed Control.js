@@ -22,7 +22,7 @@ function gps(s, x) {
  */
 
 /* 
-// Solution 2: for loop and Math.max
+// Solution 2b: for loop and Math.max
 function gps(s, x) {
   if (x.length <= 1) return 0;
 
