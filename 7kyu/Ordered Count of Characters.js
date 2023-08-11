@@ -26,22 +26,5 @@ function orderedCount(text) {
   return result;
 } */
 
-/* 
-// Solution 3: Using Map and Array
-function orderedCount(text) {
-  const charCountMap = new Map();
-  const result = [];
-
-  for (const char of text) {
-    charCountMap.set(char, (charCountMap.get(char) || 0) + 1);
-  }
-
-  for (const [char, count] of charCountMap) {
-    result.push([char, count]);
-  }
-
-  return result;
-} */
-
 // console.log(orderedCount("abracadabra")); // [['a', 5], ['b', 2], ['r', 2], ['c', 1], ['d', 1]]]
 // console.log(orderedCount("233312")); // [['2', 2], ['3', 3], ['1', 1 ]]]
