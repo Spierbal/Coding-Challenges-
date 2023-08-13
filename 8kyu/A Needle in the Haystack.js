@@ -9,4 +9,6 @@ const findNeedle = haystack =>
   `found the needle at position ${haystack.indexOf("needle")}`;
  */
 
-// console.log(findNeedle(haystack_2)) // --> found the needle at position 5
+// const haystackArray = ["hay", "hay", "3", "hay", 2, "needle", "hay", "hay"];
+
+// console.log(findNeedle(haystackArray)); // --> found the needle at position 5
