@@ -14,7 +14,7 @@ function orderedCount(text) {
   const charFreq = new Map();
 
   for (const char of text) {
-    const currentCount = charFreq.get(char) + 1 || 1;
+    const currentCount = (charFreq.get(char) || 0) + 1;
     charFreq.set(char, currentCount);
   }
   return [...charFreq.entries()];
