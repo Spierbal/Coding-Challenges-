@@ -1,4 +1,4 @@
-const solution = str => str.split("").reverse().join("");
+const solution = str => [...str].reverse().join("");
 
 // Solution 2:
 /* function solution(str) {
@@ -20,9 +20,10 @@ function solution(str) {
   return reversed;
 } */
 
+/* 
 // Solution 4:
-/* const solution = str =>
-  str.split("").reduce((reversed, char) => char + reversed, "");
+const solution = str =>
+  [...str].reduce((reversed, char) => char + reversed, "");
  */
 
 // console.log(solution("world")); // --> "dlrow"
