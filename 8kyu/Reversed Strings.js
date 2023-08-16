@@ -1,4 +1,4 @@
-const solution = str => str.split("").reverse().join("");
+// const solution = str => str.split("").reverse().join("");
 
 // Solution 2:
 /* function solution(str) {
@@ -7,11 +7,11 @@ const solution = str => str.split("").reverse().join("");
     reverse += str[i];
   }
   return reverse;
-}
- */
+} */
 
+/* 
 // Solution 3: For Of Loop
-/* function solution(str) {
+function solution(str) {
   let reversed = "";
 
   for (const char of str) {
@@ -25,4 +25,4 @@ const solution = str => str.split("").reverse().join("");
   str.split("").reduce((reversed, char) => char + reversed, "");
  */
 
-// console.log(solution("world")); // --> "dlrow"
+console.log(solution("world")); // --> "dlrow"
