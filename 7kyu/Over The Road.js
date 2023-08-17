@@ -14,3 +14,36 @@ function overTheRoad(address, n) {
 // console.log(overTheRoad(3, 5)); // 8
 // console.log(overTheRoad(7, 11)); // 16
 // console.log(overTheRoad(23633656673, 310027696726)); // 596421736780
+
+/*
+n=1
+1| |2     
+  
+n=2 
+1| |4    
+3| |2 
+
+n=3
+1| |6     
+3| |4
+5| |2
+  
+n=4
+1| |8     
+3| |6
+5| |4
+7| |2
+
+n=5
+1| |10
+3| |8
+5| |6
+7| |4
+9| |2
+
+
+
+
+
+
+*/
