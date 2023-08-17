@@ -3,8 +3,12 @@ const overTheRoad = (address, n) => n * 2 - address + 1;
 /* 
 // Solution 1b: more readable version
 function overTheRoad(address, n) {
+  // Calculate the total number of houses on both sides of the road
   const totalHouses = n * 2;
+  
+  // Calculate the corresponding house number on the opposite side of the road
   const oppositeHouse = totalHouses - address + 1;
+
   return oppositeHouse;
 } */
 
