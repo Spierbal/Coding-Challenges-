@@ -23,6 +23,29 @@ function add(a, b) {
   return res;
 }
 
+/* 
+// Solution 1b: more concise
+function add(a, b) {
+  let res = "";
+  let carry = 0;
+  let i = a.length - 1,
+    j = b.length - 1;
+
+  while (i >= 0 || j >= 0 || carry) {
+    const digitA = i >= 0 ? parseInt(a[i]) : 0;
+    const digitB = j >= 0 ? parseInt(b[j]) : 0;
+
+    const sum = digitA + digitB + carry;
+    carry = Math.floor(sum / 10);
+    res = (sum % 10) + res;
+
+    i--;
+    j--;
+  }
+
+  return res;
+} */
+
 // console.log(add("1", "1")); // "2");
 // console.log(add("123", "456")); // "579");
 // console.log(add("888", "222")); // "1110");

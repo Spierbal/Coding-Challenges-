@@ -1,13 +1,13 @@
-// Solution 1: functional approach
+// Solution 1: map, join, and gauss' formula
 class SequenceSum {
   static showSequence(count) {
     if (count < 0) return `${count}<0`;
     if (count === 0) return "0=0";
 
-    const series = [...Array(count + 1)].map((_, i) => i);
-    const sum = series.reduce((a, b) => a + b);
+    const sequence = [...Array(count + 1)].map((_, i) => i).join("+");
+    const sum = (count * (count + 1)) / 2;
 
-    return `${series.join("+")} = ${sum}`;
+    return `${sequence} = ${sum}`;
   }
 }
 
@@ -15,22 +15,20 @@ class SequenceSum {
 // Solution 2: for loop
 class SequenceSum {
   static showSequence(count) {
-    let sum = 0;
-    let series = "";
-
     if (count < 0) return `${count}<0`;
     if (count === 0) return "0=0";
 
+    let sum = 0;
+    let sequence = "";
+
     for (let i = 0; i <= count; i++) {
       sum += i;
-      series += i;
+      sequence += i;
 
-      if (i < count) {
-        series += "+";
-      }
+      // add + after each number
+      if (i < count) sequence += "+";
     }
-
-    return `${series} = ${sum}`;
+    return `${sequence} = ${sum}`;
   }
 } */
 
