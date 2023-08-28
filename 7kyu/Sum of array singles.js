@@ -1,13 +1,46 @@
+// Solution 1: Set
 function repeats(arr) {
-  const count = {};
+  let uniqueSet = new Set();
+  let sum = 0;
+
+  for (let num of arr) {
+    if (uniqueSet.has(num)) {
+      sum -= num;
+    } else {
+      uniqueSet.add(num);
+      sum += num;
+    }
+  }
+  return sum;
+}
+
+/* 
+// Solution 2: object & Set
+function repeats(arr) {
+  const freqObj = {};
   const uniqueSet = new Set();
 
   for (const num of arr) {
-    count[num] = count[num] + 1 || 1;
-    count[num] === 1 ? uniqueSet.add(num) : uniqueSet.delete(num);
+    freqObj[num] = freqObj[num] + 1 || 1;
+    freqObj[num] === 1 ? uniqueSet.add(num) : uniqueSet.delete(num);
   }
-  return [...uniqueSet].reduce((a, b) => a + b);
-}
+  return [...uniqueSet].reduce((a, b) => a + b, 0);
+} */
+
+/* 
+// Solution 3: Map
+function repeats(arr) {
+  const freqMap = new Map();
+  let sum = 0;
+
+  for (const num of arr) {
+    freqMap.set(num, freqMap.get(num) + 1 || 1);
+  }
+  for (const [num, count] of freqMap.entries()) {
+    if (count === 1) sum += num;
+  }
+  return sum;
+} */
 
 // console.log(repeats([4, 5, 7, 5, 4, 8])); // 15
 // console.log(repeats([9, 10, 19, 13, 19, 13])); // 19
