@@ -6,5 +6,5 @@ function sortMyString(S) {
   return `${even} ${odd}`;
 }
 
-console.log(sortMyString("CodeWars")); // "CdWr oeas"
-console.log(sortMyString("YCOLUE'VREER")); // "YOU'RE CLEVER"
+// console.log(sortMyString("CodeWars")); // "CdWr oeas"
+// console.log(sortMyString("YCOLUE'VREER")); // "YOU'RE CLEVER"
