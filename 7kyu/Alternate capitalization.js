@@ -1,10 +1,10 @@
 // Solution 1: map() solution with join()
-// function capitalize(s) {
-//   let even = [...s].map((c, i) => (i % 2 === 0 ? c.toUpperCase() : c)).join("");
-//   let odd = [...s].map((c, i) => (i % 2 !== 0 ? c.toUpperCase() : c)).join("");
+function capitalize(s) {
+  let even = [...s].map((c, i) => (i % 2 === 0 ? c.toUpperCase() : c)).join("");
+  let odd = [...s].map((c, i) => (i % 2 !== 0 ? c.toUpperCase() : c)).join("");
 
-//   return [even, odd];
-// }
+  return [even, odd];
+}
 
 /* 
 // Solution 2: for loop with ternary operator
