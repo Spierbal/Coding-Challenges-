@@ -1,4 +1,4 @@
-// // Solution 1: filter & join
+// Solution 1: filter & join
 function sortMyString(S) {
   let even = [...S].filter((_, i) => i % 2 === 0).join("");
   let odd = [...S].filter((_, i) => i % 2 !== 0).join("");
@@ -24,5 +24,17 @@ function sortMyString(S) {
 const sortMyString = s =>
   [...s].reduce((acc, c, i) => ((acc[i % 2] += c), acc), ["", ""]).join(" "); */
 
-// console.log(sortMyString("CodeWars")); // "CdWr oeas"
+/* 
+// Solution 3: for loop
+function sortMyString(S) {
+  let even = "";
+  let odd = "";
+
+  for (let i = 0; i < S.length; i++) {
+    i % 2 === 0 ? (even += S[i]) : (odd += S[i]);
+  }
+  return `${even} ${odd}`;
+} */
+
+// console.log000000000(sortMyString("CodeWars")); // "CdWr oeas"
 // console.log(sortMyString("YCOLUE'VREER")); // "YOU'RE CLEVER"
