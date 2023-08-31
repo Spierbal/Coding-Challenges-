@@ -1,7 +1,7 @@
 // Solution 1: filter & join
 function sortMyString(S) {
-  let even = [...S].filter((_, i) => i % 2 === 0).join("");
-  let odd = [...S].filter((_, i) => i % 2 !== 0).join("");
+  const even = [...S].filter((_, i) => i % 2 === 0).join("");
+  const odd = [...S].filter((_, i) => i % 2 !== 0).join("");
 
   return `${even} ${odd}`;
 }
@@ -36,5 +36,5 @@ function sortMyString(S) {
   return `${even} ${odd}`;
 } */
 
-// console.log000000000(sortMyString("CodeWars")); // "CdWr oeas"
+// console.log(sortMyString("CodeWars")); // "CdWr oeas"
 // console.log(sortMyString("YCOLUE'VREER")); // "YOU'RE CLEVER"
