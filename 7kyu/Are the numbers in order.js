@@ -3,6 +3,7 @@ const inAscOrder = arr => arr.every((cur, i) => i === 0 || cur >= arr[i - 1]);
 // Solution 1b: every() and comparison
 /* const inAscOrder = arr => arr.every((_, i) => i === 0 || arr[i] >= arr[i - 1]); */
 
+/* 
 // Solution 2: for loop
 function inAscOrder(arr) {
   for (let i = 0; i < arr.length - 1; i++) {
@@ -10,7 +11,7 @@ function inAscOrder(arr) {
     if (arr[i] > arr[i + 1]) return false;
   }
   return true;
-}
+} */
 
 // Solution 3: JSON.stringify and comparison
 /* const inAscOrder = arr =>

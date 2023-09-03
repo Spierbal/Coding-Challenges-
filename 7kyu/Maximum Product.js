@@ -25,10 +25,9 @@ function adjacentElementsProduct(array) {
 // Positive numbers
 console.log(adjacentElementsProduct([5, 8])); // 40);
 console.log(adjacentElementsProduct([1, 2, 3])); // 6);
-console.log(adjacentElementsProduct([1, 5, 10, 9])); // 90
-console.log(adjacentElementsProduct([4, 12, 3, 1, 5])); // 48
-console.log(adjacentElementsProduct([5, 1, 2, 3, 1, 4])); // 6
-console.log(adjacentElementsProduct([4, 12, 3, 1, 5])); // 48
+console.log(adjacentElementsProduct([1, 5, 10, 9])); // 90 
+console.log(adjacentElementsProduct([4, 12, 3, 1, 5])); // 48 
+console.log(adjacentElementsProduct([5, 1, 2, 3, 1, 4])); // 6 
 
 // Both positive and negative values
 console.log(adjacentElementsProduct([3, 6, -2, -5, 7, 3])); // 21
