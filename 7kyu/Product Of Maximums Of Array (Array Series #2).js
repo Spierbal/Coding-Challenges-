@@ -1,16 +1,18 @@
-// Solution 1: sort with slice and reduce
+// Solution 1: sort with slice and reduce (more readable)
 const maxProduct = (numbers, size) =>
   [...numbers]
     .sort((a, b) => b - a)
     .slice(0, size)
     .reduce((product, num) => product * num, 1);
 
-// Solution 1b: sort with for of loop
+/* 
+// Solution 1b: sort ascending with slice and reduce (more efficient)
 const maxProduct = (numbers, size) =>
   [...numbers]
     .sort((a, b) => a - b)
     .slice(-size)
     .reduce((total, number) => total * number, 1);
+ */
 
 /* 
 // Solution 2: sort with for of loop
@@ -24,7 +26,7 @@ function maxProduct(numbers, size) {
   return product;
 } */
 
-console.log(maxProduct([4, 3, 5], 2)); // 20
+// console.log(maxProduct([4, 3, 5], 2)); // 20
 // console.log(maxProduct([10, 8, 7, 9], 3)); // 720
 // console.log(maxProduct([8, 6, 4, 6], 3)); // 288
 // console.log(maxProduct([10, 2, 3, 8, 1, 10, 4], 5)); // 9600
