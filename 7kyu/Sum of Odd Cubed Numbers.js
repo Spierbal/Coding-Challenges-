@@ -1,29 +1,27 @@
-// function cubeOdd(arr) {
-//   return arr
-//     .filter(e => e % 2 !== 0)
-//     .reduce((a, b) => (typeof b === "number" ? a + b ** 3 : undefined), 0);
-// }
-
+// Solution 1: filter & reduce
 function cubeOdd(arr) {
-  const sum = arr.reduce((a, b) => {
-    return typeof b === "number" && b % 2 !== 0 ? a + b ** 3 : a;
-  }, 0);
-  return sum;
+  return arr
+    .filter(e => e % 2 !== 0)
+    .reduce((a, b) => (typeof b === "number" ? a + b ** 3 : undefined), 0);
 }
 
-// function cubeOdd(arr) {
-//   let sum = 0;
-//   for (const element of arr) {
-//     if (isNaN(element)) {
-//       return undefined;
-//     }
-//     sum += element % 2 !== 0 ? element ** 3 : 0;
-//   }
-//   return sum;
-// }
+/* 
+// Solution 1b: reduce (more efficient)
+function cubeOdd(arr) {
+  return arr.reduce((acc, curr) => {
+    if (typeof curr !== "number") {
+      return undefined;
+    }
+    const cubed = curr ** 3;
+    if (cubed ** 3 % 2 !== 0) {
+      return acc + cubed;
+    }
+    return acc;
+  }, 0);
+} */
 
 /* 
-// Solution 2: for loop
+// Solution 2: for loop & typeof
 function cubeOdd(arr) {
   let sum = 0;
 
