@@ -22,7 +22,7 @@ function cubeOdd(arr) {
 } */
 
 /* 
-// Solution 3: for loop & typeof
+// Solution 3: for loop
 function cubeOdd(arr) {
   let sum = 0;
 
