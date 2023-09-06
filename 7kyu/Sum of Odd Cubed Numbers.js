@@ -13,7 +13,15 @@ function cubeOdd(arr) {
 }
 
 /* 
-// Solution 2: every & reduce
+// Solution 2: some & reduce
+function cubeOdd(arr) {
+  return arr.some(element => element === Number(element))
+    ? arr.reduce((sum, num) => (num % 2 !== 0 ? sum + num ** 3 : sum), 0)
+    : undefined;
+} */
+
+/* 
+// Solution 3: every & reduce
 function cubeOdd(arr) {
   const areAllNumbers = arr.every(element => typeof element === "number");
   if (!areAllNumbers) return undefined;
@@ -22,7 +30,7 @@ function cubeOdd(arr) {
 } */
 
 /* 
-// Solution 3: for loop
+// Solution 4: for loop
 function cubeOdd(arr) {
   let sum = 0;
 
@@ -38,6 +46,6 @@ function cubeOdd(arr) {
   return sum;
 } */
 
-// console.log(cubeOdd([1, 2, 3, 4])); // 28
-// console.log(cubeOdd([-3, -2, 2, 3])); // 0
-// console.log(cubeOdd(["a", "12", "9", "z", "42"])); // undefined
+console.log(cubeOdd([1, 2, 3, 4])); // 28
+console.log(cubeOdd([-3, -2, 2, 3])); // 0
+console.log(cubeOdd(["a", "12", "9", "z", "42"])); // undefined
