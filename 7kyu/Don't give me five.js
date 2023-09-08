@@ -1,11 +1,10 @@
-function dontGiveMeFive(start, end) {
-  return [...Array(end - start + 1)]
-    .map((_, i) => i + start)
-    .filter(e => !String(e).includes("5"));
-}
+const dontGiveMeFive = (s, e) =>
+  [...Array(e - s + 1)]
+    .map((_, i) => i + s)
+    .filter(e => !String(e).includes("5")).length;
 
 // Solution 1b:
-/* const dontGiveMeFive = (s, e) =>
+/*c = (s, e) =>
   [...Array(e - s + 1)].map((_, i) => s + i).filter(e => !/5/.test(e)).length; */
 
 // Solution 2

@@ -1,9 +1,7 @@
 // Solution 1: reduce
 const minSum = arr => {
-  const sorted = [...arr].sort((a, b) => a - b);
-  return (
-    sorted.reduce((sum, n, i) => sum + n * sorted[sorted.length - 1 - i], 0) / 2
-  );
+  const sort = [...arr].sort((a, b) => a - b);
+  return sort.reduce((sum, n, i) => sum + n * sort[sort.length - 1 - i], 0) / 2;
 };
 
 /* 

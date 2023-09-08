@@ -1,4 +1,4 @@
-const inAscOrder = arr => arr.every((cur, i) => i === 0 || cur >= arr[i - 1]);
+const inAscOrder = arr => arr.every((num, i) => i === 0 || num >= arr[i - 1]);
 
 // Solution 1b: every() and comparison
 /* const inAscOrder = arr => arr.every((_, i) => i === 0 || arr[i] >= arr[i - 1]); */

@@ -1,4 +1,4 @@
-// const generateShape = n => [...Array(n)].map(() => "+".repeat(n)).join("\n");
+const generateShape = n => [...Array(n)].map(() => "+".repeat(n)).join("\n");
 
 /* 
 // Solution 1b: 

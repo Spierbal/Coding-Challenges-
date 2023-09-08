@@ -1,15 +1,21 @@
+// solution 1: filter
 function dbSort(a) {
-  return [
-    ...a.filter(el => typeof el === "number").sort((a, b) => a - b),
-    ...a.filter(el => typeof el === "string").sort(),
-  ];
-}
-
-// solution 1b:
-/* function dbSort(a) {
   const numbers = a.filter(e => typeof e === "number").sort((a, b) => a - b);
   const strings = a.filter(e => typeof e === "string").sort();
-  return [...numbers,...strings];
+  return [...numbers, ...strings];
+}
+
+/* 
+// Solution 2: for of loop
+function dbSort(a) {
+  const numbers = [];
+  const strings = [];
+
+  for (const element of a) {
+    typeof element === "number" ? numbers.push(element) : strings.push(element);
+  }
+
+  return [...numbers.sort((a, b) => a - b), ...strings.sort()];
 } */
 
 // console.log(dbSort([6, 2, 3, 4, 5])); // [2, 3, 4, 5, 6];

@@ -1,4 +1,19 @@
-// Solution 1: Two-Pointer Swap
+// Solution 1: for loop & push()
+function reverse(array) {
+  const reversed = [];
+
+  for (let i = array.length - 1; i >= 0; i--) {
+    reversed.push(array[i]);
+  }
+  return reversed;
+}
+
+/* 
+// Solution 2: map()
+const reverse = array => array.map((_, i, arr) => arr[arr.length - 1 - i]); */
+
+/* 
+// Solution 3: Two-Pointer Swap
 function reverse(array) {
   const reversed = [...array];
 
@@ -13,28 +28,11 @@ function reverse(array) {
     right--;
   }
   return reversed;
-}
-
-/* 
-// Solution 2: for loop & push()
-function reverse(array) {
-  const reversed = [];
-
-  for (let i = array.length - 1; i >= 0; i--) {
-    reversed.push(array[i]);
-  }
-  return reversed;
 } */
 
 /* 
-// Solution 3: map()
-// const reverse = array => array.map((_, i, arr) => arr[arr.length - 1 - i]);
- */
-
-/* 
 // Solution 4: reduce()
-const reverse = arr => arr.reduce((reversed, item) => [item, ...reversed], []);
- */
+const reverse = arr => arr.reduce((reversed, item) => [item, reversed], []); */
 
 // console.log(reverse([1, 2, 3])); // [3,2,1]
 // console.log(reverse([10, 20, 30, 40, 50])); // [3,2,1]
