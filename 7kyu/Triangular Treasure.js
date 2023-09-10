@@ -3,8 +3,7 @@ const triangular = n => (n <= 0 ? 0 : (n * (n + 1)) / 2);
 
 /* 
 // Solution 1b: uses Math.sign to explicitly check for positive number
-const triangular = n => (Math.sign(n) === 1 ? (n * (n + 1)) / 2 : 0);
- */
+const triangular = n => (Math.sign(n) === 1 ? (n * (n + 1)) / 2 : 0); */
 
 /* 
 // Solution 2: while loop
@@ -17,6 +16,6 @@ function triangular(n) {
     return sum;
 } */
 
-// console.log(triangular(2)); // 3
-// console.log(triangular(4)); // 10
+// console.log(triangular(2)); // 3 (since 1 + 2 = 3)
+// console.log(triangular(4)); // 10 (since 1 + 2 + 3 + 4 = 10)
 // console.log(triangular(-454)); // 0

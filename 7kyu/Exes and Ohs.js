@@ -1,4 +1,4 @@
-const XO = str =>
+const hasEqualXAndOCount = str =>
   (str.match(/x/gi) || []).length === (str.match(/o/gi) || []).length;
 
 // Solution 1b:

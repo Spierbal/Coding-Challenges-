@@ -18,14 +18,15 @@ const sumOfMinimums = arr =>
   }
   return sum;
 }; */
-
-/* console.log(
+/* 
+console.log(
   sumOfMinimums([
     [7, 9, 8, 6, 2],
     [6, 3, 5, 4, 3],
     [5, 8, 7, 4, 5],
   ])
-); // 9
+); // 9 // because the minimums of the above arrays are [2, 3, 4] respectively */
+/* 
 console.log(
   sumOfMinimums([
     [11, 12, 14, 54],
@@ -33,5 +34,4 @@ console.log(
     [7, 9, 4, 3],
     [9, 8, 6, 7],
   ])
-); //76
- */
+); //76 // because the minimums of the above arrays are [11, 56, 3, 6] respectively */

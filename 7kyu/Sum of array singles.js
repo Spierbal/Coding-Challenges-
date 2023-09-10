@@ -42,8 +42,8 @@ function repeats(arr) {
   return sum;
 } */
 
-// console.log(repeats([4, 5, 7, 5, 4, 8])); // 15
-// console.log(repeats([9, 10, 19, 13, 19, 13])); // 19
-// console.log(repeats([16, 0, 11, 4, 8, 16, 0, 11])); // 12
-// console.log(repeats([5, 17, 18, 11, 13, 18, 11, 13])); // 22
-// console.log(repeats([5, 10, 19, 13, 10, 13])); // 24
+// console.log(repeats([4, 5, 7, 5, 4, 8])); // 15 (sum of 7 and 8 since these are not repeated)
+// console.log(repeats([9, 10, 19, 13, 19, 13])); // 19 (sum of 9 and 10 since these are not repeated)
+// console.log(repeats([16, 0, 11, 4, 8, 16, 0, 11])); // 12 (sum of 4 and 8 since these are not repeated)
+// console.log(repeats([5, 17, 18, 11, 13, 18, 11, 13])); // 22 (sum of 5 and 17 since these are not repeated)
+// console.log(repeats([5, 10, 19, 13, 10, 13])); // 24 (sum of 5 and 19 since these are not repeated)

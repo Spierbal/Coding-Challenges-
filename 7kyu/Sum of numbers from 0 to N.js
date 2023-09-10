@@ -33,3 +33,5 @@ class SequenceSum {
 } */
 
 // console.log(SequenceSum.showSequence(6)); // "0+1+2+3+4+5+6 = 21"
+// console.log(SequenceSum.showSequence(-1)); //  "-1<0"
+// console.log(SequenceSum.showSequence(0)); //  "0=0"

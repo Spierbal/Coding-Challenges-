@@ -1,5 +1,5 @@
 const sumDigits = number =>
-  [...String(Math.abs(number))].reduce((a, b) => a + +b, 0);
+  [...String(Math.abs(number))].reduce((a, b) => a + Number(b), 0);
 
 // Solution 1b
 /* const sumDigits = n =>
@@ -23,5 +23,5 @@ const sumDigits = number =>
  */
 
 // console.log(sumDigits(10)); // 1
-// console.log(sumDigits(99)); // 18
-// console.log(sumDigits(-32)); // 5
+// console.log(sumDigits(99)); // 18 (since 9 + 9 = 18)
+// console.log(sumDigits(-32)); // 5 (since 3 + 2 = 5)

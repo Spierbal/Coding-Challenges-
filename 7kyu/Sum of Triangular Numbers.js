@@ -35,8 +35,8 @@ function sumTriangularNumbers(n) {
   return triangularNum.reduce((sum, num) => sum + num, 0);
 } */
 
-// console.log(sumTriangularNumbers(6)); // 56
-// console.log(sumTriangularNumbers(34)); // 7140
+// console.log(sumTriangularNumbers(6)); // 56 (6 * 7 * 8) / 6 = 56
+// console.log(sumTriangularNumbers(34)); // 7140 (34 * 35 * 36) / 6 = 7140
 // console.log(sumTriangularNumbers(-291)); // 0
 // console.log(sumTriangularNumbers(943)); // 140205240
 // console.log(sumTriangularNumbers(-971)); // 0

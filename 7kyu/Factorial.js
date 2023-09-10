@@ -40,9 +40,12 @@ function factorial(n) {
   return n === 0 ? 1 : n * factorial(n - 1);
 } */
 
-/* console.log(factorial(0)); // 1, (factorial for 0 is 1)
-console.log(factorial(1)); // 1,( factorial(1) returns 1 * 1, which is 1)
-console.log(factorial(2)); // 2, (factorial(2) returns 2 * 1, which is 2)
-console.log(factorial(3)); // 6, (factorial(3) returns 3 * 2, which is 6)
-console.log(factorial(4)); // 24, (factorial(4) returns 4 * 6, which is 24)
-console.log(factorial(5)); // 120, (factorial(5) returns 5 * 24, which is 120) */
+/* console.log(factorial(0)); // 1, (factorial 0! = 1)
+console.log(factorial(1)); // 1, (factorial 1! =  1)
+console.log(factorial(2)); // 2, (factorial 2! = 2 * 1 = 2)
+console.log(factorial(3)); // 6, (factorial 3! = 3 * 2 * 1 = 6)
+console.log(factorial(4)); // 24, (factorial 4! = 4 * 3 * 2 * 1 = 24)
+console.log(factorial(5)); // 120, (factorial 5! = 5 * 4 * 3 * 2 * 1 = 120  ) */
+
+// Explain what the function does in one sentence (if it's not obvious) and why it's interesting to you.
+// The factorial function takes a number and returns the product of all positive integers less than or equal to it.
