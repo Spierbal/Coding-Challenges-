@@ -24,6 +24,7 @@ function getFirstPython(list) {
   return "There will be no Python developers";
 } */
 
+/* 
 const list1 = [
   {
     firstName: "Mark",
@@ -49,8 +50,9 @@ const list1 = [
     age: 19,
     language: "Clojure",
   },
-];
+]; */
 
+/* 
 const list2 = [
   {
     firstName: "Kseniya",
@@ -68,7 +70,7 @@ const list2 = [
     age: 32,
     language: "Ruby",
   },
-];
+]; */
 
-console.log(getFirstPython(list1)); // Victoria, Puerto Rico
-console.log(getFirstPython(list2)); // There will be no Python developers
+// console.log(getFirstPython(list1)); // "Victoria, Puerto Rico"
+// console.log(getFirstPython(list2)); // "There will be no Python developers"
