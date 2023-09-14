@@ -1,19 +1,22 @@
-// const getFirstPython = list => {
-//   const dev = list.find(({ language }) => language === "Python");
-//   return dev
-//     ? `${dev.firstName}, ${dev.country}`
-//     : "There will be no Python developers";
-// };
-
-function getFirstPython(list) {
-  const i = list.findIndex(({ language }) => language === "Python");
-  return i !== -1
-    ? `${list[i].firstName}, ${list[i].country}`
+// Solution 1: find
+const getFirstPython = list => {
+  const dev = list.find(({ language }) => language === "Python");
+  return dev
+    ? `${dev.firstName}, ${dev.country}`
     : "There will be no Python developers";
-}
+};
 
 /* 
-// Solution 2: for of loop
+// Solution 2: findIndex
+function getFirstPython(list) {
+  const index = list.findIndex(({ language }) => language === "Python");
+  return index !== -1
+    ? `${list[index].firstName}, ${list[index].country}`
+    : "There will be no Python developers";
+} */
+
+/* 
+// Solution 3: for of loop
 function getFirstPython(list) {
   for (const dev of list) {
     if (dev.language === "Python") return `${dev.firstName}, ${dev.country}`;
@@ -66,5 +69,6 @@ const list2 = [
     language: "Ruby",
   },
 ];
-console.log(getFirstPython(list1)); //
-console.log(getFirstPython(list2)); //
+
+console.log(getFirstPython(list1)); // Victoria, Puerto Rico
+console.log(getFirstPython(list2)); // There will be no Python developers
