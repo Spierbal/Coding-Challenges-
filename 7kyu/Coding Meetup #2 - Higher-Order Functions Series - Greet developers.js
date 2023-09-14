@@ -1,5 +1,5 @@
 // Solution 1: map() and spread operator
-const greetDevelopers1 = list =>
+const greetDevelopers = list =>
   list.map(dev => ({
     ...dev,
     greeting: `Hi ${dev.firstName}, what do you like the most about ${dev.language}?`,
