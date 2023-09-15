@@ -40,7 +40,7 @@ function addLetters(...letters) {
   return String.fromCharCode(((sum - 1) % 26) + 97);
 } */
 
-// console.log(addLetters("f")); // "f" ((1 + 2 + 3 = 6 - 1) % 26 + 97 = 102 => "f")
+console.log(addLetters("a", "b", "c")); // "f" ((1 + 2 + 3 = 6 - 1) % 26 + 97 = 102 => "f")
 // console.log(addLetters("z")); // "z" (26 % 26 + 97 = 122 => "z")
 // console.log(addLetters("a", "b")); // "c" ((1 + 2 = 3 - 1) % 26 + 97 = 99 => "c")
 // console.log(addLetters("z", "a")); // "a" ((26 + 1 = 27 - 1) % 26 + 97 = 97 => "a")
