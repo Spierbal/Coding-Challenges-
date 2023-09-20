@@ -29,6 +29,7 @@ function balancedNum(number) {
   return leftSum === rightSum ? "Balanced" : "Not Balanced";
 } */
 
+/* 
 // Check for balanced number
 console.log(balancedNum(7)); // "Balanced"
 console.log(balancedNum(959)); // "Balanced"
@@ -40,4 +41,4 @@ console.log(balancedNum(1024)); // "Not Balanced"
 console.log(balancedNum(66545)); // "Not Balanced"
 console.log(balancedNum(295591)); // "Not Balanced"
 console.log(balancedNum(1230987)); // "Not Balanced"
-console.log(balancedNum(56239814)); // "Balanced"
+console.log(balancedNum(56239814)); // "Balanced" */
