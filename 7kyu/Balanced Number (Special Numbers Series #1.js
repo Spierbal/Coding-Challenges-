@@ -4,7 +4,7 @@ function balancedNum(number) {
 
   if (length <= 2) return "Balanced";
 
-  const middle = Math.floor(numStr.length / 2) - (numStr.length % 2 === 0);
+  const middle = Math.floor(length / 2) - (length % 2 === 0);
 
   const leftPart = numStr.slice(0, middle);
   const rightPart = numStr.slice(-middle);
