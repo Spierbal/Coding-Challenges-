@@ -1,19 +1,33 @@
 function balancedNum(number) {
-  let numStr = String(number);
-  let length = numStr.length;
+  const numStr = String(number);
+  const length = numStr.length;
 
   if (length <= 2) return "Balanced";
 
-  const middle = Math.floor(length / 2) - (length % 2 === 0 ? 1 : 0);
+  const middle = Math.floor(numStr.length / 2) - (numStr.length % 2 === 0);
 
-  let left = numStr.slice(0, middle);
-  let right = numStr.slice(-middle);
+  const leftPart = numStr.slice(0, middle);
+  const rightPart = numStr.slice(-middle);
 
-  let leftSum = left.split("").reduce((acc, curr) => acc + Number(curr), 0);
-  let rightSum = right.split("").reduce((acc, curr) => acc + Number(curr), 0);
+  const sum = str => [...str].reduce((acc, num) => acc + Number(num), 0);
 
-  return leftSum === rightSum ? "Balanced" : "Not Balanced";
+  return sum(leftPart) === sum(rightPart) ? "Balanced" : "Not Balanced";
 }
+
+/* 
+// Solution 2: for loop
+function balancedNum(number) {
+  const numStr = String(number);
+  const middle = Math.floor(numStr.length / 2) - (numStr.length % 2 === 0);
+  let leftSum = 0;
+  let rightSum = 0;
+
+  for (let i = 0; i < middle; i++) {
+    leftSum += Number(numStr[i]);
+    rightSum += Number(numStr[numStr.length - i - 1]);
+  }
+  return leftSum === rightSum ? "Balanced" : "Not Balanced";
+} */
 
 // Check for balanced number
 console.log(balancedNum(7)); // "Balanced"
