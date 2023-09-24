@@ -22,6 +22,7 @@ function minSum(arr) {
   return sum;
 } */
 
-console.log(minSum([5, 4, 2, 3])); // 22
-console.log(minSum([12, 6, 10, 26, 3, 24])); // 342
-console.log(minSum([9, 2, 8, 7, 5, 4, 0, 6])); // 74
+/* 
+console.log(minSum([5, 4, 2, 3])); // 22 (5*2 + 3*4 = 22)
+console.log(minSum([12, 6, 10, 26, 3, 24])); // 342 (26*3 + 24*6 + 12*10 = 342)
+console.log(minSum([9, 2, 8, 7, 5, 4, 0, 6])); // 74 (9*0 + 8*2 +7*4 +6*5 = 74) */
