@@ -12,7 +12,7 @@
 
 /* 
 // Solution 2: sort & slice
-const twoOldestAges2 = ages => [...ages].sort((a, b) => a - b).slice(-2); */
+const twoOldestAges = ages => [...ages].sort((a, b) => a - b).slice(-2); */
 
 /* 
 // Solution 3: Math.max & spread operator & filter
