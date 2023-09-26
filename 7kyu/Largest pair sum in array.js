@@ -4,7 +4,7 @@ function largestPairSum(numbers) {
 
   for (const num of numbers) {
     if (num >= largest) {
-      [secondLargest, largest] = [largest, num];
+      [largest, secondLargest] = [num, largest];
     } else if (num > secondLargest) secondLargest = num;
   }
   return largest + secondLargest;
@@ -21,7 +21,10 @@ function largestPairSum(numbers) {
 /* 
 // solution 3: sort, slice & reduce
 function largestPairSum(numbers) {
-  return [...numbers].sort((a, b) => b - a).slice(0, 2).reduce((a, b) => a + b, 0);
+  return [...numbers]
+    .sort((a, b) => b - a)
+    .slice(0, 2)
+    .reduce((a, b) => a + b, 0);
 } */
 
 /* 

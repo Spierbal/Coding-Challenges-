@@ -1,14 +1,14 @@
 // Solution 1: for of loop with destructuring assignment
-// function twoOldestAges(ages) {
-//   let [oldestAge, secondOldestAge] = [-Infinity, -Infinity];
+function twoOldestAges(ages) {
+  let [oldestAge, secondOldestAge] = [-Infinity, -Infinity];
 
-//   for (const age of ages) {
-//     if (age > oldestAge) {
-//       [oldestAge, secondOldestAge] = [age, oldestAge];
-//     } else if (age > secondOldestAge) secondOldestAge = age;
-//   }
-//   return [secondOldestAge, oldestAge];
-// }
+  for (const age of ages) {
+    if (age >= oldestAge) {
+      [oldestAge, secondOldestAge] = [age, oldestAge];
+    } else if (age > secondOldestAge) secondOldestAge = age;
+  }
+  return [secondOldestAge, oldestAge];
+}
 
 /* 
 // Solution 2: sort & slice
