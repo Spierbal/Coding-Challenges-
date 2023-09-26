@@ -11,6 +11,21 @@ function largestPairSum(numbers) {
 }
 
 /* 
+// Solution 1b: for loop
+function largestPairSum(numbers) {
+  let largest = -Infinity;
+  let secondLargest = -Infinity;
+
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] >= largest) {
+      secondLargest = largest;
+      largest = numbers[i];
+    } else if (numbers[i] > secondLargest) secondLargest = numbers[i];
+  }
+  return largest + secondLargest;
+} */
+
+/* 
 // solution 2: sort & sum
 function largestPairSum(numbers) {
   let sorted = [...numbers].sort((a, b) => b - a);
