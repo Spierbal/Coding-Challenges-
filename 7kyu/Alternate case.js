@@ -16,13 +16,11 @@ function alternateCase(s) {
 /* 
 // Solution 3: for loop
 function alternateCase(s) {
-  let result = "";
+  let res = "";
   for (let i = 0; i < s.length; i++) {
-    const char = s[i];
-    result +=
-      char >= "a" && char <= "z" ? char.toUpperCase() : char.toLowerCase();
+    res += s[i] >= "a" && s[i] <= "z" ? s[i].toUpperCase() : s[i].toLowerCase();
   }
-  return result;
+  return res;
 } */
 
 // console.log(alternateCase("abc")); // "ABC"
