@@ -1,11 +1,7 @@
 // Solution 1: Set, filter & sort()
 function menFromBoys(arr) {
-  const even = [
-    ...new Set(arr.filter(num => num % 2 === 0).sort((a, b) => a - b)),
-  ];
-  const odd = [
-    ...new Set(arr.filter(num => num % 2 !== 0).sort((a, b) => b - a)),
-  ];
+  const even = [...new Set(arr.filter(n => n % 2 === 0).sort((a, b) => a - b))];
+  const odd = [...new Set(arr.filter(n => n % 2 !== 0).sort((a, b) => b - a))];
   return [...even, ...odd];
 }
 
