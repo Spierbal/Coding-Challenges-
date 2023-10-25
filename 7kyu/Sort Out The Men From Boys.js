@@ -1,5 +1,5 @@
 // Solution 1: Set, filter & sort()
-function menFromBoys1(arr) {
+function menFromBoys(arr) {
   const even = [
     ...new Set(arr.filter(num => num % 2 === 0).sort((a, b) => a - b)),
   ];
@@ -9,8 +9,9 @@ function menFromBoys1(arr) {
   return [...even, ...odd];
 }
 
+/* 
 // Solution 2: Set, for of loop & sort()
-function menFromBoys3(arr) {
+function menFromBoys(arr) {
   const evenSet = new Set();
   const oddSet = new Set();
 
@@ -21,9 +22,9 @@ function menFromBoys3(arr) {
   const odd = [...oddSet].sort((a, b) => b - a);
 
   return [...even, ...odd];
-}
+} */
 
-console.log(menFromBoys([7, 3, 14, 17])); // [14,17,7,3]);
+// console.log(menFromBoys([7, 3, 14, 17])); // [14,17,7,3]);
 // console.log(menFromBoys([2, 43, 95, 90, 37])); // [2,90,95,43,37]);
 // console.log(menFromBoys([20, 33, 50, 34, 43, 46])); // [20,34,46,50,43,33]);
 // console.log(menFromBoys([82, 91, 72, 76, 76, 100, 85])); // [72,76,82,100,91,85]);
