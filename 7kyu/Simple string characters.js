@@ -55,18 +55,7 @@ function solve(s) {
     }
     return [uppercaseCount, lowercaseCount, numCount, specialCharCount];
   } */
-function solve(s) {
-  const counts = [0, 0, 0, 0]; // [A-Z, a-z, 0-9, Special character]
 
-  for (const char of s) {
-    const charCode = char.charCodeAt(0);
-    if (charCode >= 65 && charCode <= 90) counts[0]++; // A-Z
-    else if (charCode >= 97 && charCode <= 122) counts[1]++; // a-z
-    else if (charCode >= 48 && charCode <= 57) counts[2]++; // 0-9
-    else counts[3]++; // Special character
-  }
-  return counts;
-}
 // console.log(solve("")); // [0,0,0,0]);
 // console.log(solve("aAbBcC")); // [3,3,0,0]);
 // console.log(solve("Codewars@codewars123.com")); // [1,18,3,2]);
