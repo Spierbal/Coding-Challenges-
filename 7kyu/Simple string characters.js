@@ -1,5 +1,5 @@
 // Solution 1: for loop & charCodeAt()
-function solve1(s) {
+function solve(s) {
   const counts = [0, 0, 0, 0];
 
   for (let i = 0; i < s.length; i++) {
