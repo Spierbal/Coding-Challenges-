@@ -34,6 +34,8 @@ function mxdiflg(a1, a2) {
   // return the maximum length difference
   return Math.max(max1 - min2, max2 - min1);
 } */
+
+/* 
 console.log(
   mxdiflg(
     [
@@ -50,4 +52,4 @@ console.log(
     ],
     ["cccooommaaqqoxii", "gggqaffhhh", "tttoowwwmmww"]
   )
-); // => 13 (Math.max(1, 13) = 13));
+); // => 13 (Math.max(1, 13) = 13)); */
