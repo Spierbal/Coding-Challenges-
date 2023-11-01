@@ -38,4 +38,4 @@ function count(str) {
   return counts;
 } */
 
-console.log(count("aba")); // --> { a: 2, b: 1 }
+// console.log(count("aba")); // --> { a: 2, b: 1 }
