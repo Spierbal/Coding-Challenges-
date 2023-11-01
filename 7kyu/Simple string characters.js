@@ -14,24 +14,7 @@ function solve(s) {
 }
 
 /* 
-// Solution 2: for of loop & regex
-function solve(s) {
-  let uppercaseCount = 0;
-  let lowercaseCount = 0;
-  let numCount = 0;
-  let specialCharCount = 0;
-
-  for (const char of s) {
-    if (/[A-Z]/.test(char)) uppercaseCount++;
-    else if (/[a-z]/.test(char)) lowercaseCount++;
-    else if (/\d/.test(char)) numCount++;
-    else specialCharCount++;
-  }
-  return [uppercaseCount, lowercaseCount, numCount, specialCharCount];
-} */
-
-/* 
-// Solution 3: reduce & charCodeAt()
+// Solution 2: reduce & charCodeAt()
 function solve(s) {
   return [...s].reduce(
     (counts, char) => {
@@ -43,18 +26,35 @@ function solve(s) {
       return counts;
     },
     [0, 0, 0, 0]
-  );
-} */
+    );
+  } */
 
 /* 
-// Solution 4: regex & match()
-function solve(s) {
-  const uppercaseCount = (s.match(/[A-Z]/g) || []).length;
-  const lowercaseCount = (s.match(/[a-z]/g) || []).length;
-  const numCount = (s.match(/\d/g) || []).length;
-  const specialCharCount = (s.match(/[^A-Za-z0-9]/g) || []).length;
-  return [uppercaseCount, lowercaseCount, numCount, specialCharCount];
-} */
+  // Solution 3: regex & match()
+  function solve(s) {
+    const uppercaseCount = (s.match(/[A-Z]/g) || []).length;
+    const lowercaseCount = (s.match(/[a-z]/g) || []).length;
+    const numCount = (s.match(/\d/g) || []).length;
+    const specialCharCount = (s.match(/[^A-Za-z0-9]/g) || []).length;
+    return [uppercaseCount, lowercaseCount, numCount, specialCharCount];
+  } */
+
+/* 
+  // Solution 4: for of loop & regex
+  function solve(s) {
+    let uppercaseCount = 0;
+    let lowercaseCount = 0;
+    let numCount = 0;
+    let specialCharCount = 0;
+  
+    for (const char of s) {
+      if (/[A-Z]/.test(char)) uppercaseCount++;
+      else if (/[a-z]/.test(char)) lowercaseCount++;
+      else if (/\d/.test(char)) numCount++;
+      else specialCharCount++;
+    }
+    return [uppercaseCount, lowercaseCount, numCount, specialCharCount];
+  } */
 
 // console.log(solve("")); // [0,0,0,0]);
 // console.log(solve("aAbBcC")); // [3,3,0,0]);
