@@ -13,8 +13,9 @@ function isSortedAndHow(arr) {
     : "no";
 } */
 
+/* 
 // Solution 3: for loop
-/* function isSortedAndHow(array) {
+function isSortedAndHow(array) {
   let ascending = true;
   let descending = true;
 
@@ -23,7 +24,7 @@ function isSortedAndHow(arr) {
     if (array[i] > array[i + 1]) ascending = false;
   }
   return ascending ? "yes, ascending" : descending ? "yes, descending" : "no";
-} */
+}  */
 
 // console.log(isSortedAndHow([1, 2])); // 'yes, ascending'
 // console.log(isSortedAndHow([15, 7, 3, -8])); // 'yes, descending';
