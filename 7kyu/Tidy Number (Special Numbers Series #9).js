@@ -19,6 +19,7 @@ function tidyNumber(n) {
 /* 
 console.log(tidyNumber(12)); // true (since it's in increasing order)
 console.log(tidyNumber(102)); // false (since it's not in increasing order)
-console.log(tidyNumber(9672)); // false
-console.log(tidyNumber(2789)); // true
-console.log(tidyNumber(2335)); // true */
+console.log(tidyNumber(9672)); // false (since it's not in increasing order)
+console.log(tidyNumber(2789)); // true  (since it's in increasing order)
+console.log(tidyNumber(2335)); // true  (since it's in increasing order)
+*/
