@@ -1,7 +1,8 @@
 const binaryArrayToNumber = arr => parseInt(arr.join(""), 2);
 
+/* 
 // Solution 1b:
-/* const binaryArrayToNumber = arr => {
+const binaryArrayToNumber = arr => {
   const bin = arr.join("");
   return parseInt(bin, 2);
 }; */

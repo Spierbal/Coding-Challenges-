@@ -21,8 +21,9 @@ function findDeletedNumber(arr, mixArr) {
   return originalSum - mixedSum;
 } */
 
+/* 
 // Solution 4: Hash Map
-/* const findDeletedNumber = (arr, mixArr) => {
+const findDeletedNumber = (arr, mixArr) => {
   const numMap = {};
 
   for (const num of mixArr) {
