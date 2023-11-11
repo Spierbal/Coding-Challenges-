@@ -1,22 +1,50 @@
-function timeCorrect(timestring) {
-  if (timestring === null || timestring === "") return timestring;
+// Solution 1: Manual calculation
+function timeCorrect1(timestring) {
+  if (!timestring) return timestring;
 
-  const times = timestring.split(":");
-  if (times.length !== 3) return null;
+  const [hrs, mins, secs] = timestring.split(":").map(Number);
 
-  let [hours, minutes, seconds] = times.map(Number);
+  let hours = Number(hrs);
+  let minutes = Number(mins);
+  let seconds = Number(secs);
+
   if (isNaN(hours) || isNaN(minutes) || isNaN(seconds)) return null;
 
-  if (hours < 0 || hours > 23) hours = 0;
-  if (minutes < 0 || minutes > 59) minutes = 0;
-  if (seconds < 0 || seconds > 59) seconds = 0;
+  minutes += Math.floor(seconds / 60);
+  seconds %= 60;
 
-  const adjustedTime = `${String(hours).padStart(2, "0")}:${String(
-    minutes
-  ).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+  hours += Math.floor(minutes / 60);
+  minutes %= 60;
 
-  return adjustedTime;
+  hours %= 24;
+
+  return `${String(hours).padStart(2, "0")}:${String(minutes).padStart(
+    2,
+    "0"
+  )}:${String(seconds).padStart(2, "0")}`;
 }
+
+/* 
+// Solution 2: Date object with UTC
+function timeCorrect(timestring) {
+  if (!timestring) return timestring;
+
+  const [hours, minutes, seconds] = timestring.split(":").map(Number);
+
+  if ([hours, minutes, seconds].some(isNaN)) return null;
+
+  const date = new Date(0);
+  date.setUTCHours(hours, minutes, seconds);
+
+  const adjustedHours = date.getUTCHours();
+  const adjustedMinutes = date.getUTCMinutes();
+  const adjustedSeconds = date.getUTCSeconds();
+
+  return `${String(adjustedHours).padStart(2, "0")}:${String(
+    adjustedMinutes
+  ).padStart(2, "0")}:${String(adjustedSeconds).padStart(2, "0")}`;
+}
+ */
 
 // console.log(timeCorrect(null)); // null
 // console.log(timeCorrect("")); // ""
