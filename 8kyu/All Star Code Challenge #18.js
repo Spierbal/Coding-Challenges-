@@ -1,16 +1,21 @@
+// const strCount = (str, letter) => [...str].filter(l => l === letter).length;
+
+//Solution 2:
+// const strCount = (str, letter) => str.split(letter).length - 1;
+
+/* 
+//Solution 3:
 const strCount = (str, letter) =>
-  str.split("").reduce((sum, char) => sum + letter.includes(char), 0);
+  str.split("").reduce((a, b) => a + letter.includes(b), 0);
+ */
 
-//Solution 1b:
-// const strCount = (str, letter) =>
-//   [...str].reduce((a, b) => a + letter.includes(b), 0);
+/* 
+//Solution 4:
+const strCount = (str, letter) =>
+  [...str].reduce((count, char) => (char === letter ? count + 1 : count), 0);
+ */
 
-//Solution 2a:
-// const strCount = (str, letter) =>
-//   str.split('').filter(c => c === letter).length;
+const strCount = (str, letter) =>
+  [...str].reduce((count, char) => count + letter.includes(char), 0);
 
-//Solution 2b:
-// const strCount = (str, letter) =>
-//   str.split("").filter(char => letter.includes(char)).length;
-
-// console.log(strCount("Hello", "l")); //--> 2 (there are two occurences of "l")
+console.log(strCount("Hello", "l")); //--> 2 (there are two occurences of "l")
