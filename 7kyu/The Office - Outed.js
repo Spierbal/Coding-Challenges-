@@ -4,7 +4,9 @@ function outed(meet, boss) {
     (sum, member) => sum + (member === boss ? meet[member] * 2 : meet[member]),
     0
   );
+
   const avgScore = totalScore / Object.keys(meet).length;
+
   return avgScore <= 5 ? "Get Out Now!" : "Nice Work Champ!";
 }
 
