@@ -23,6 +23,7 @@ function outed(meet, boss) {
 
   return avgScore <= 5 ? "Get Out Now!" : "Nice Work Champ!";
 } */
+
 /* 
 console.log(
   outed(
