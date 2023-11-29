@@ -11,6 +11,7 @@ function outed(meet, boss) {
 }
 
 /* 
+// Solution 2: for of loop
 function outed(meet, boss) {
   let totalSum = 0;
   let totalMembers = 0;
