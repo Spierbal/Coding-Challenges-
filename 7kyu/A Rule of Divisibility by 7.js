@@ -15,7 +15,7 @@ function seven(m) {
   let counter = 0;
 
   while (m > 99) {
-    // R
+    // Remove last digit and subtract 2 times the last digit
     m = Math.floor(m / 10) - 2 * (m % 10);
     counter++;
   }
