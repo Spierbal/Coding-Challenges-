@@ -1,3 +1,4 @@
+// Solution 1: if/else
 const fizzbuzz = n =>
   [...Array(n)].map((_, i) => {
     i++;
@@ -7,8 +8,9 @@ const fizzbuzz = n =>
     return i;
   });
 
-// Solution 1b: // ternary operator
-/* const fizzbuzz = n =>
+/* 
+// Solution 1b: ternary
+const fizzbuzz = n =>
   [...Array(n)].map((_, i) =>
     ++i % 15 === 0
       ? "FizzBuzz"
@@ -19,13 +21,14 @@ const fizzbuzz = n =>
       : i
   ); */
 
-// Solution 1c:
-/* const fizzbuzz3 = n =>
-  [...Array(n)].map((_, i) => {
-    return (++i % 3 ? "" : "Fizz") + (i % 5 ? "" : "Buzz") || i;
-  }); */
+/* 
+// Solution 1c: ternary (concise)
+const fizzbuzz = n =>
+  [...Array(n)].map(
+    (_, i) => (++i % 3 ? "" : "Fizz") + (i % 5 ? "" : "Buzz") || i
+  ); */
 
-// Solution 2:
+// Solution 2: for loop
 /* function fizzbuzz(n) {
   let arr = [];
   for (let i = 1; i <= n; i++) {
@@ -37,8 +40,9 @@ const fizzbuzz = n =>
   return arr;
 } */
 
-// Solution 3:
-/* function fizzbuzz(n) {
+/* 
+// Solution 3: switch
+function fizzbuzz(n) {
   const result = [];
   for (let i = 1; i <= n; i++) {
     switch (true) {
@@ -57,6 +61,6 @@ const fizzbuzz = n =>
     }
   }
   return result;
-} */
+}  */
 
 // console.log(fizzbuzz(15)); // [1,2,'Fizz',4,'Buzz','Fizz',7,8,'Fizz','Buzz']
