@@ -4,7 +4,7 @@ function nbDig(n, d) {
 
   for (let i = 0; i <= n; i++) {
     const square = String(i * i);
-    count += square.split(String(d)).length - 1; // -1 because the length of the array is always 1 more than the number of occurrences
+    count += square.split(String(d)).length - 1;
   }
 
   return count;
@@ -49,7 +49,7 @@ function nbDig(n, digit) {
   return digitCounts.reduce((total, count) => total + count, 0);
 } */
 
-// console.log(nbDig(5750, 0)); // 4700 (it is 4700 because there are 4700 zeros from 0 to 5750)
-// console.log(nbDig(11011, 2)); //  9481 (it is 9481 because there are 9481 digits 2 from 0 to 11011)
-// console.log(nbDig(12224, 8)); // 7733 (it is 7733 because there are 7733 digits 8 from 0 to 12224)
-// console.log(nbDig(11549, 1)); // 11905 (it is 11905 because there are 11905 digits 1 from 0 to 11549)
+console.log(nbDig(5750, 0)); // 4700 (0 occurs 4700 times in the squares of numbers from 0 to 5750)
+console.log(nbDig(11011, 2)); //  9481 (2 occurs 9481 times in the squares of numbers from 0 to 11011)
+console.log(nbDig(12224, 8)); // 7733 (8 occurs 7733 times in the squares of numbers from 0 to 12224)
+console.log(nbDig(11549, 1)); // 11905 (1 occurs 11905 times in the squares of numbers from 0 to 11549)
