@@ -7,6 +7,7 @@ function gooseFilter(birds) {
     "Pilgrim",
     "Steinbacher",
   ]);
+
   return birds.filter(bird => !geese.has(bird));
 }
 
