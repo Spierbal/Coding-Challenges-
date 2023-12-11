@@ -1,24 +1,27 @@
+// Solution 1: findIndex()
 function warnTheSheep(queue) {
-  let index = [...queue].reverse().indexOf("wolf");
-  return index
-    ? `Oi! Sheep number ${index}! You are about to be eaten by a wolf!`
-    : "Pls go away and stop eating my sheep";
+  const index = queue.findIndex(animal => animal === "wolf");
+
+  return index === queue.length - 1
+    ? "Pls go away and stop eating my sheep"
+    : `Oi! Sheep number ${
+        queue.length - 1 - index
+      }! You are about to be eaten by a wolf!`;
 }
 
 /* 
-// Solution 2: 
+// Solution 2: indexOf() and reverse()
 function warnTheSheep(queue) {
-  const wolfIndex = queue.indexOf('wolf');
-  const sheepIndex = queue.length - wolfIndex - 1;
+  const wolfIndex = [...queue].reverse().indexOf("wolf");
 
-  if (wolfIndex === queue.length - 1) {
-      return "Pls go away and stop eating my sheep";
-  } else {
-      return `Oi! Sheep number ${sheepIndex}! You are about to be eaten by a wolf!`;
-  }
+  return wolfIndex === 0
+    ? "Pls go away and stop eating my sheep"
+    : `Oi! Sheep number ${wolfIndex}! You are about to be eaten by a wolf!`;
 } */
 
-// console.log(warnTheSheep(["sheep", "sheep", "wolf"])); // -->"Pls go away and stop eating my sheep"
-// console.log(
-//   warnTheSheep(["sheep", "sheep", "sheep", "wolf", "sheep", "sheep"])
-// ); // "Oi! Sheep number 2! You are about to be eaten by a wolf!"
+/* 
+console.log(warnTheSheep(["sheep", "sheep", "wolf"])); // -->"Pls go away and stop eating my sheep"
+console.log(
+  warnTheSheep(["sheep", "sheep", "sheep", "wolf", "sheep", "sheep"])
+); // "Oi! Sheep number 2! You are about to be eaten by a wolf!"
+ */
