@@ -1,9 +1,9 @@
 // Solution 1: Set
 function solve(arr) {
-  const uniqueValues = new Set(arr);
+  const uniqueNums = new Set(arr);
 
-  for (const num of uniqueValues) {
-    if (!uniqueValues.has(-num)) return num;
+  for (const num of uniqueNums) {
+    if (!uniqueNums.has(-num)) return num;
   }
 }
 

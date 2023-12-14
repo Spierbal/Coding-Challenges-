@@ -1,13 +1,13 @@
 // Solution 1: Set & for of loop
 function repeats(arr) {
-  const uniqueSet = new Set();
+  const uniqueNums = new Set();
   let sum = 0;
 
   for (let num of arr) {
-    if (uniqueSet.has(num)) {
+    if (uniqueNums.has(num)) {
       sum -= num;
     } else {
-      uniqueSet.add(num);
+      uniqueNums.add(num);
       sum += num;
     }
   }
@@ -27,8 +27,8 @@ function repeats(arr) {
     if (count === 1) sum += num;
   }
   return sum;
-} */
-
+}
+ */
 /* 
 // Solution 3: object & for of loop
 function repeats(arr) {
