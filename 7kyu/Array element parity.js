@@ -13,7 +13,6 @@ function solve(arr) {
   for (const num of arr) {
     if (!arr.includes(-num)) return num;
   }
-  return num;
 } */
 
 /* 
