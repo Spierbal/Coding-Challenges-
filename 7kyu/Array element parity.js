@@ -32,7 +32,8 @@ function solve(arr) {
 /* 
 // Solution 5: reduce()
 const solve5 = array =>
-  array.reduce((acc, num) => (array.includes(-num) ? acc : num), 0); */
+  array.reduce((acc, num) => (array.includes(-num) ? acc : num), 0); 
+*/
 
 // console.log(solve([1, -1, 2, -2, 3])); // 3
 // console.log(solve([-3, 1, 2, 3, -1, -4, -2])); // -4
