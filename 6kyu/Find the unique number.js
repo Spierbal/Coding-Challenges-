@@ -1,6 +1,5 @@
 // Solution 1: find()
-const findUniq = arr =>
-  arr.find(num => arr.indexOf(num) === arr.lastIndexOf(num));
+const findUniq = arr => arr.find(n => arr.indexOf(n) === arr.lastIndexOf(n));
 
 /* 
 // Solution 2: for of loop
