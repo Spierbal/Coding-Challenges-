@@ -18,7 +18,7 @@ function isPangram(string) {
 // Solution 2: Every()
 function isPangram(str) {
   const alphabet = "abcdefghijklmnopqrstuvwxyz";
-  return [...alphabet].every(letter => str.toLowerCase().includes(letter));
+  return [...alphabet].every(char => str.toLowerCase().includes(char));
 } */
 
 /* 
@@ -26,21 +26,20 @@ function isPangram(str) {
 function isPangram(str) {
   const alphabet = "abcdefghijklmnopqrstuvwxyz";
 
-  for (const letter of alphabet) {
-    if (!str.toLowerCase().includes(letter)) return false;
+  for (const char of alphabet) {
+    if (!str.toLowerCase().includes(char)) return false;
   }
 
   return true;
-}
- */
+} */
 
 /* 
 // Solution 3: for of  loop & indexOf()
 function isPangram(str) {
   const alphabet = "abcdefghijklmnopqrstuvwxyz";
 
-  for (const letter of alphabet) {
-    if (str.toLowerCase().indexOf(letter) === -1) return false;
+  for (const char of alphabet) {
+    if (str.toLowerCase().indexOf(char) === -1) return false;
   }
 
   return true;
