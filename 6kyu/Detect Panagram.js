@@ -1,4 +1,4 @@
-//  Solution 1: Set
+//  Solution 1: Set & replace()
 function isPangram(str) {
   const alphabetSet = new Set(str.toLowerCase().replace(/[^a-z]/g, ""));
 
@@ -6,7 +6,14 @@ function isPangram(str) {
 }
 
 /* 
-// Solution 1b: Set
+// Solution 1b: Set & match()
+function isPangram(str) {
+  const alphabetSet = new Set(str.toLowerCase().match(/[a-z]/g));
+  return alphabetSet.size === 26;
+} */
+
+/* 
+// Solution 1c: Set
 function isPangram(string) {
   const alphabetSet = new Set("abcdefghijklmnopqrstuvwxyz");
   const uniqueCharsSet = new Set(string.toLowerCase().replace(/[^a-z]/g, ""));
