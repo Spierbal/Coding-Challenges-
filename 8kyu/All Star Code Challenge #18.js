@@ -1,19 +1,16 @@
-// Solution !: filter
-const strCount = (str, letter) => [...str].filter(l => l === letter).length;
-
-/* 
-//Solution 2: split
+// Solution 1: split()
 const strCount = (str, letter) => str.split(letter).length - 1;
- */
+
+// Solution 2: filter
+// const strCount = (str, letter) => [...str].filter(l => l === letter).length;
 
 /* 
-//Solution 3: reduce
+// Solution 3: reduce
 const strCount = (str, letter) =>
-  [...str].reduce((count, char) => (char === letter ? count + 1 : count), 0);
- */
+  [...str].reduce((count, char) => (char === letter ? count + 1 : count), 0); */
 
 /* 
-//Solution 3b: reduce
+// Solution 3b: reduce
 const strCount = (str, letter) =>
   [...str].reduce((count, char) => count + letter.includes(char), 0); */
 
