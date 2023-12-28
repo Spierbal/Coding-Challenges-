@@ -1,5 +1,5 @@
 function sumIntervals(intervals) {
-  intervals.sort((a, b) => a[1] - b[1]); // sort by endpoints
+  intervals.sort((a, b) => a[0] - b[0]); // sort by start point
 
   let result = 0,
     current = intervals[0];
