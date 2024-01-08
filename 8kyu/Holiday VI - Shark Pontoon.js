@@ -1,5 +1,5 @@
 function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin) {
-  if (dolphin) sharkSpeed / 2;
+  if (dolphin) sharkSpeed /= 2;
 
   const pontoonTime = pontoonDistance / youSpeed;
   const sharkTime = sharkDistance / sharkSpeed;
