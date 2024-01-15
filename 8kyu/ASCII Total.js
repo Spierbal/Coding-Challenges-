@@ -1,10 +1,9 @@
 // Solution 1: charCodeAt & reduce
-const uniTotal1 = string =>
-  [...string].reduce((a, b) => a + b.charCodeAt(0), 0);
+const uniTotal = string => [...string].reduce((a, b) => a + b.charCodeAt(0), 0);
 
 /* 
 // Solution 2: charCodeAt, map &
-const uniTotal2 = string =>
+const uniTotal = string =>
   [...string].map(char => char.charCodeAt(0)).reduce((a, b) => a + b);
 */
 
