@@ -1,4 +1,4 @@
-// Solution 1: concise
+// // Solution 1: concise
 const multiply = num => num * 5 ** String(Math.abs(num)).length;
 
 /* 
@@ -15,6 +15,14 @@ function multiply(number) {
   const length = String(Math.abs(number)).length;
 
   return number * Math.pow(5, length);
+} */
+
+/* 
+// Solution 3: ternary operator
+function multiply(num) {
+  const length = String(num).length;
+
+  return num * 5 ** (num < 0 ? length - 1 : length);
 } */
 
 // console.log(multiply(10)); // 250
