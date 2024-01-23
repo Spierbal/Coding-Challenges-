@@ -2,7 +2,7 @@
 function numberToPower(number, power) {
   let result = 1;
 
-  for (let i = 0; i < power; i++) {
+  for (let i = 1; i <= power; i++) {
     result *= number;
   }
 
