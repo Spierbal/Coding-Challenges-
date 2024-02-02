@@ -17,7 +17,7 @@ function uefaEuro2016(teams, scores) {
 } */
 
 /* 
-// Solution 2: double ternary operator
+// Solution 2b: nested ternary operators
 function uefaEuro2016(teams, scores) {
   const result =
     scores[0] > scores[1]
