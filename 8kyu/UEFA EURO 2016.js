@@ -1,23 +1,24 @@
-// Solution 1: if statement
+// Solution 1: ternary operator
+function uefaEuro2016(teams, scores) {
+  const result =
+    scores[0] === scores[1]
+      ? "teams played draw."
+      : `${teams[scores[0] > scores[1] ? 0 : 1]} won!`;
+  return `At match ${teams[0]} - ${teams[1]}, ${result}`;
+}
+
+/* 
+// Solution 2: if statement
 function uefaEuro2016(t, s) {
   if (s[0] > s[1]) return `At match ${t[0]} - ${t[1]}, ${t[0]} won!`;
   if (s[0] < s[1]) return `At match ${t[0]} - ${t[1]}, ${t[1]} won!`;
 
   return `At match ${t[0]} - ${t[1]}, teams played draw.`;
 }
+ */
 
 /* 
-// Solution 2: ternary operator
-function uefaEuro2016(teams, scores) {
-  const result =
-    scores[0] === scores[1]
-      ? "teams played draw."
-      : `${teams[scores[0] > scores[1] ? 0 : 1]} won!`;
-  return `At match ${teams.join(" - ")}, ${result}`;
-} */
-
-/* 
-// Solution 2b: nested ternary operators
+// Solution 3 nested ternary operators
 function uefaEuro2016(teams, scores) {
   const result =
     scores[0] > scores[1]
