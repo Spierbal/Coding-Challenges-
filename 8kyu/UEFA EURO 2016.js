@@ -8,17 +8,19 @@ function uefaEuro2016(teams, scores) {
 }
 
 /* 
-// Solution 2: if statement
-function uefaEuro2016(t, s) {
-  if (s[0] > s[1]) return `At match ${t[0]} - ${t[1]}, ${t[0]} won!`;
-  if (s[0] < s[1]) return `At match ${t[0]} - ${t[1]}, ${t[1]} won!`;
+// Solution 2: destructuring assignment
+function uefaEuro2016(teams, scores) {
+  const [team1, team2] = teams;
+  const [score1, score2] = scores;
+  const winner = score1 > score2 ? team1 : team2;
 
-  return `At match ${t[0]} - ${t[1]}, teams played draw.`;
-}
- */
+  return `At match ${team1} - ${team2}, ${
+    score1 === score2 ? "teams played draw." : `${winner} won!`
+  }`;
+} */
 
 /* 
-// Solution 3 nested ternary operators
+// Solution 3: nested ternary operators
 function uefaEuro2016(teams, scores) {
   const result =
     scores[0] > scores[1]
@@ -27,7 +29,8 @@ function uefaEuro2016(teams, scores) {
       ? `${teams[1]} won`
       : "teams played draw";
   return `At match ${teams[0]} - ${teams[1]}, ${result}!`;
-} */
+}
+ */
 
 // console.log(uefaEuro2016(["Germany", "Ukraine"], [2, 0])); //, "At match Germany - Ukraine, Germany won!"
 // console.log(uefaEuro2016(["Belgium", "Italy"], [0, 2])); //, "At match Belgium - Italy, Italy won!"
