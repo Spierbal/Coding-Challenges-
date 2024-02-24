@@ -1,11 +1,12 @@
-// Solution 1: charCodeAt & reduce
-const uniTotal = string => [...string].reduce((a, b) => a + b.charCodeAt(0), 0);
+// Solution 1: spread operator & reduce()
+const uniTotal = string =>
+  [...string].reduce((acc, char) => acc + char.charCodeAt(0), 0);
 
 /* 
-// Solution 2: charCodeAt, map &
-const uniTotal = string =>
-  [...string].map(char => char.charCodeAt(0)).reduce((a, b) => a + b);
-*/
+// Solution 1b: split() & reduce()
+function uniTotal(string) {
+  return string.split("").reduce((sum, char) => sum + char.charCodeAt(0), 0);
+} */
 
 /* 
 // Solution 3: for of loop
@@ -16,6 +17,12 @@ function uniTotal(string) {
     sum += char.charCodeAt(0);
   }
   return sum;
+} */
+
+/* 
+// Solution 5: Array.from method & reduce()
+function uniTotal(string) {
+  return Array.from(string).reduce((sum, char) => sum + char.charCodeAt(0), 0);
 } */
 
 // console.log(uniTotal("a")); // 97
