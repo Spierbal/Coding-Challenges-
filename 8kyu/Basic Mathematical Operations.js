@@ -1,3 +1,4 @@
+// Solution 1: Switch statement
 function basicOp(operation, value1, value2) {
   switch (operation) {
     case "+":
@@ -13,8 +14,20 @@ function basicOp(operation, value1, value2) {
   }
 }
 
-//Examples: Operator, value1, value2 --> output
-// console.log(basicOp("+", 4, 7)); --> 11
-// console.log(basicOp('-', 15, 18)) --> -3
-// console.log(basicOp('*', 5, 5)) --> 25
-// console.log(basicOp('/', 49, 7)) --> 7
+/* 
+// Solution 2: Object 
+function basicOp(operation, value1, value2) {
+  const operations = {
+    "+": (a, b) => a + b,
+    "-": (a, b) => a - b,
+    "*": (a, b) => a * b,
+    "/": (a, b) => a / b,
+  };
+
+  return operations[operation](value1, value2);
+} */
+
+// console.log(basicOp("+", 4, 7)); // --> 11
+// console.log(basicOp("-", 15, 18)); // --> -3
+// console.log(basicOp("*", 5, 5)); // --> 25
+// console.log(basicOp("/", 49, 7)); //--> 7
