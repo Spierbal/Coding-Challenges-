@@ -1,14 +1,17 @@
+// Solution 1: Math.floor() (concise)
 const cockroachSpeed = s => Math.floor((s * 100000) / 3600);
 
-//const cockroachSpeed = s => Math.floor(s / 0.036); // note: 0.036 (3600 / 100000)
-//const cockroachSpeed = s => Math.floor(s * 27.7777778); // note: 27.7777778 (100000 / 3600)
+/* 
+//Solution 2: Readable
+function cockroachSpeed(s) {
+  const KmToCm = 100000; // 1 km = 1000 m * 100 cm = 100000 cm
+  const HourToSec = 3600; // 1 hour = 60 minutes * 60 seconds = 3600 seconds
+  return Math.floor((s * KmToCm) / HourToSec);
+} */
 
-//Solution 2:
-// function cockroachSpeed(s) {
-//   const secsInHour = 3600;
-//   const cmInKM = 100000;
-//   const speed = Math.floor((s * cmInKM) / secsInHour);
-//   return speed;
-// }
+// Solution 3: ParseInt()
+// const cockroachSpeed = s => parseInt((s * 100000) / 3600);
 
-//console.log(cockroachSpeed(1.08)) // --> 30
+// console.log(cockroachSpeed(1.08)); // --> 30
+// console.log(cockroachSpeed(1.09)); // --> 30
+// console.log(cockroachSpeed(0)); // --> 0
