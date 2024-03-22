@@ -40,4 +40,7 @@ function bmi(weight, height) {
     : "Obese";
 } */
 
+console.log(bmi(50, 1.8)); // --> "Underweight"
 console.log(bmi(80, 1.8)); // --> "Normal"
+console.log(bmi(90, 1.8)); // --> "Overweight"
+console.log(bmi(100, 1.8)); // --> "Obese"
