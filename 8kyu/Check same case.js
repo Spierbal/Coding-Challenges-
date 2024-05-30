@@ -1,4 +1,15 @@
-// Solution 1: Regex & toUpperCase() & toLowerCase()
+// Solution 1: ternary operator
+const sameCase = (a, b) => {
+  if (!/[a-z]/i.test(a) || !/[a-z]/i.test(b)) return -1;
+
+  return (a === a.toUpperCase() && b === b.toUpperCase()) ||
+    (a === a.toLowerCase() && b === b.toLowerCase())
+    ? 1
+    : 0;
+};
+
+/* 
+// Solution 1b: Regex & toUpperCase() & toLowerCase()
 const sameCase = (a, b) => {
   // Check if a and b are not letters
   if (!/[a-z]/i.test(a) || !/[a-z]/i.test(b)) return -1;
@@ -9,21 +20,18 @@ const sameCase = (a, b) => {
 
   // If a and b are not the same case
   return 0;
-};
-
-/* 
-// Solution 1b: ternary operator 
-const sameCase = (a, b) => {
-  if (!/[a-z]/i.test(a) || !/[a-z]/i.test(b)) return -1;
-
-  return (a === a.toUpperCase() && b === b.toUpperCase()) ||
-    (a === a.toLowerCase() && b === b.toLowerCase())
-    ? 1
-    : 0;
 }; */
 
 /* 
-// Solution 2: ascii code
+// Solution 2: ascii code - concise
+function sameCase(a, b) {
+  if (!/[a-zA-Z]/.test(a) || !/[a-zA-Z]/.test(b)) return -1;
+  return a.charCodeAt(0) < 97 === b.charCodeAt(0) < 97 ? 1 : 0;
+}
+ */
+
+/* 
+// Solution 2b: ascii code
 const sameCase = (a, b) => {
   if (!/[a-z]/i.test(a) || !/[a-z]/i.test(b)) return -1;
 
@@ -36,7 +44,7 @@ const sameCase = (a, b) => {
   if (charA >= 97 && charA <= 122 && charB >= 97 && charB <= 122) return 1;
 
   return 0;
-}; */
+};  */
 
 // console.log(sameCase("C", "B")); // 1
 // console.log(sameCase("b", "a")); // 1
