@@ -1,6 +1,6 @@
 // Solution 1: ternary operator
 const sameCase = (a, b) => {
-  if (!/[a-z]/i.test(a) || !/[a-z]/i.test(b)) return -1;
+  if (!/[a-zA-Z]/.test(a) || !/[a-zA-Z]/.test(b)) return -1;
 
   return (a === a.toUpperCase() && b === b.toUpperCase()) ||
     (a === a.toLowerCase() && b === b.toLowerCase())
